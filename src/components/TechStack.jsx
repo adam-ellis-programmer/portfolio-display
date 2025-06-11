@@ -68,7 +68,11 @@ const TechStack = () => {
     'redux',
     'my sql',
     'sass',
+    'next.js',
   ]
+  // ---- todos ---- //
+  // add nex.js and sass logos
+  // ---- todos ---- //
   return (
     <div className=''>
       <div className='max-w-[1250px] mx-auto'>
