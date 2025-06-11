@@ -33,3 +33,24 @@ body {
   border-radius: 40px;
   background-color: #d9042b;
 }
+
+.page-quote {
+  position: relative;
+}
+
+.page-quote::before {
+  content: '\201C';
+  position: absolute;
+  top: -4.5rem;
+  left: 0;
+  font-size: 8rem;
+  color: #d9042b;
+}
+.page-quote::after {
+  content: '\201D';
+  position: absolute;
+  bottom: -7.6rem;
+  right: 0;
+  font-size: 8rem;
+  color: #d9042b;
+}

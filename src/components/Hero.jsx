@@ -12,7 +12,10 @@ const Hero = () => {
         <div className=''>
           <div className='w-fit'>
             <p className='text-[8rem] font-[300] leading-none text-[#D9042B]'>
-              Adam Ellis <span className='text-[#D9042B] -rotate-11 inline-block text-[3rem'>.</span>
+              Adam Ellis{' '}
+              <span className='text-[#D9042B] -rotate-11 inline-block text-[3rem'>
+                .
+              </span>
             </p>
             <p className='text-[7rem] font-[300] leading-none'>
               {' '}
@@ -65,12 +68,21 @@ const Hero = () => {
             <img className='h-120' src={img} alt='' />
             <div className=' mt-5'>
               <p className=' text-end text-2xl tracking-[0.5rem]'>
-                over 10 projects
+                over <span className=''>10</span> projects
               </p>
               <p className=' text-end text-2xl tracking-[0.7rem]'>
                 available for
               </p>
               <p className=' text-end text-2xl tracking-[0.9rem]'> demoing</p>
+              <div className=' mt-10 flex justify-center'>
+                <p className='max-w-3/4 bg-[#032340]/20  p-5 rounded-[0.4rem]  page-quote'>
+                  Your work is going to fill a large part of your life, and the
+                  only way to be truly satisfied is to do what you believe is
+                  great work. And the only way to do great work is to love what
+                  you do. If you haven't found it yet, keep looking. Don't
+                  settle. -- steve jobs
+                </p>
+              </div>
             </div>
           </div>
         </div>
