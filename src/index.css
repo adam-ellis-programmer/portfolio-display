@@ -19,3 +19,17 @@ body {
     /* letter-spacing: .8rem; */
   }
 }
+
+.london-span {
+  position: relative;
+}
+.london-span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 93%;
+  height: 1px;
+  border-radius: 40px;
+  background-color: #d9042b;
+}

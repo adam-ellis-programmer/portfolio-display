@@ -12,7 +12,7 @@ const Hero = () => {
         <div className=''>
           <div className='w-fit'>
             <p className='text-[8rem] font-[300] leading-none text-[#D9042B]'>
-              Adam Ellis <span className='text-[#D9042B]'>.</span>
+              Adam Ellis <span className='text-[#D9042B] -rotate-11 inline-block text-[3rem'>.</span>
             </p>
             <p className='text-[7rem] font-[300] leading-none'>
               {' '}
@@ -20,10 +20,10 @@ const Hero = () => {
               <span className='text-[#D9042B] rotate-7 inline-block'>!</span>
             </p>
             <p className='text-[2rem] font-[300] leading-none text-end tracking-[1rem] mr-3 mt-2 text-[#203763]'>
-              London
+              <span className='london-span'>London</span>
             </p>
             <p className='text-[4rem] font-[300]  text-end tracking-[0.7rem] text-[#203763]'>
-              and <span>designer</span>
+              and designer
             </p>
           </div>
           <HeroButtons />
