@@ -18,7 +18,18 @@ const ShowCase = () => {
   ]
   return (
     <section className='min-h-screen'>
-      <h3 className='text-4xl text-center my-10'>Showcased Projects</h3>
+      <h3 className='text-4xl text-center my-5'>Showcased Projects</h3>
+      <div className='max-w-[1200px] m-auto grid grid-cols-2 my-5'>
+        <div></div>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque iusto
+          hic nobis? Ipsam odit explicabo architecto perferendis ex non atque
+          similique recusandae, sapiente exercitationem consectetur officia,
+          quidem eum, temporibus animi sit sed deserunt laborum vel! Corporis
+          alias qui animi, nobis laborum incidunt nihil, dignissimos
+          voluptatibus perferendis inventore esse dolorum nam!
+        </p>
+      </div>
       <div className='grid grid-cols-2  gap-5 max-w-[1400px] mx-auto'>
         {showcaseArr.map((item, i) => {
           return (

@@ -1,6 +1,8 @@
 import React from 'react'
 import img from '../assets/images/group.png'
 import HeroButtons from './HeroButtons'
+
+const name = 'designer'
 const Hero = () => {
   //h-[calc(100vh-80px)]
   return (
@@ -9,27 +11,34 @@ const Hero = () => {
       <div className='min-h-[calc(100vh-80px)]  grid grid-cols-2  mx-width'>
         <div className=''>
           <div className='w-fit'>
-            <p className='text-[8rem] font-[300] leading-none'>Adam Ellis</p>
-            <p className='text-[7rem] font-[300] leading-none'>programmer</p>
-            <p className='text-[2rem] font-[300] leading-none text-end tracking-[1rem] mr-3 mt-2'>London</p>
-            <p className='text-[4rem] font-[300]  text-end tracking-[0.7rem]'>
-              and designer
+            <p className='text-[8rem] font-[300] leading-none text-[#D9042B]'>
+              Adam Ellis <span className='text-[#D9042B]'>.</span>
             </p>
-            {/* <p>digital design and production!</p> */}
+            <p className='text-[7rem] font-[300] leading-none'>
+              {' '}
+              <span className='text-[#D9042B]'>programmer</span>{' '}
+              <span className='text-[#D9042B] rotate-7 inline-block'>!</span>
+            </p>
+            <p className='text-[2rem] font-[300] leading-none text-end tracking-[1rem] mr-3 mt-2 text-[#203763]'>
+              London
+            </p>
+            <p className='text-[4rem] font-[300]  text-end tracking-[0.7rem] text-[#203763]'>
+              and <span>designer</span>
+            </p>
           </div>
           <HeroButtons />
           <div className=''>
             <div className='my-5 mt-10 '>
-              <p className=' text-end text-3xl leading-[2.5rem] tracking-[1.1rem]'>
+              <p className=' text-end text-3xl leading-[2.5rem] tracking-[1.1rem] text-[#203763]'>
                 contact me on
               </p>
-              <p className=' text-end text-2xl leading-[2.5rem]  tracking-[1.1rem]'>
+              <p className=' text-end text-2xl leading-[2.5rem]  tracking-[1.1rem] text-[#203763] '>
                 07863807071
               </p>
             </div>
             <div className=' w-3/4 mx-auto'>
               <p className='text-2xl text-center mb-2'>
-                <i className='fa-solid fa-circle-info'></i>
+                <i className='fa-solid fa-circle-info text-[#D9042B]'></i>
                 <span className='ml-1'> quick bio</span>
               </p>
               <p className='text-justify'>
@@ -51,7 +60,8 @@ const Hero = () => {
         </div>
         {/*  */}
         <div className='flex justify-center'>
-          <div>
+          <div className=''>
+            {/* <p className='text-center text-6xl absolute'>digital design and production!</p> */}
             <img className='h-120' src={img} alt='' />
             <div className=' mt-5'>
               <p className=' text-end text-2xl tracking-[0.5rem]'>

@@ -95,7 +95,7 @@ const TechStack = () => {
           {technologies?.map((item, i) => {
             return (
               <li key={i} className='flex items-center mb-1 '>
-                <i className='mr-3 text-green-600 fa-solid fa-circle-check text-[1.5rem]'></i>
+                <i className='mr-3 text-[#FF4919] fa-solid fa-circle-check text-[1.5rem]'></i>
                 <span className='text-2xl'> {item}</span>
               </li>
             )
