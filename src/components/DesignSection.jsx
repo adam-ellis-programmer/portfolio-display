@@ -27,6 +27,7 @@ const DesignSection = () => {
     'after effects',
     'figma',
     'in design',
+    'apple motion',
   ]
   return (
     <section className='mt-10'>

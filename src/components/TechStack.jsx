@@ -69,6 +69,7 @@ const TechStack = () => {
     'my sql',
     'sass',
     'next.js',
+    'regex',
   ]
   // ---- todos ---- //
   // add nex.js and sass logos

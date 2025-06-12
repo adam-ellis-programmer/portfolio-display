@@ -77,7 +77,7 @@ const Hero = () => {
               </p>
               <p className=' text-end text-2xl tracking-[0.9rem]'> demoing</p>
               <div className=' mt-10 flex justify-center'>
-                <p className='max-w-3/4 bg-[#032340]/20  p-5 rounded-[0.4rem]  page-quote'>
+                <p className='max-w-3/4 bg-[#0A3161]/80 shadow-2xl text-white  p-5 rounded-[0.4rem]  page-quote'>
                   Your work is going to fill a large part of your life, and the
                   only way to be truly satisfied is to do what you believe is
                   great work. And the only way to do great work is to love what
