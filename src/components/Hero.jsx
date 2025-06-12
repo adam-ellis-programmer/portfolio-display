@@ -66,7 +66,7 @@ const Hero = () => {
           <div className=''>
             {/* <p className='text-center text-6xl absolute'>digital design and production!</p> */}
             <div className=' flex justify-center'>
-              <img className='h-120' src={img} alt='' />
+              <img className='h-120 ' src={img} alt='' />
             </div>
             <div className=' mt-5'>
               <p className=' text-end text-2xl tracking-[0.5rem]'>

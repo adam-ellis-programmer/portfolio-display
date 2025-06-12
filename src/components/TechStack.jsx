@@ -4,26 +4,6 @@ const TechStack = () => {
   const [logos, setLogos] = useState([])
   useEffect(() => {
     const loadLogos = async () => {
-      const logoModules = await Promise.all([
-        import('../assets/images/tech logos/1.png'),
-        import('../assets/images/tech logos/2.png'),
-        import('../assets/images/tech logos/3.png'),
-        import('../assets/images/tech logos/4.png'),
-        import('../assets/images/tech logos/5.png'),
-        import('../assets/images/tech logos/6.png'),
-        import('../assets/images/tech logos/7.png'),
-        import('../assets/images/tech logos/8.png'),
-        import('../assets/images/tech logos/9.png'),
-        import('../assets/images/tech logos/10.png'),
-        import('../assets/images/tech logos/11.png'),
-        import('../assets/images/tech logos/12.png'),
-        import('../assets/images/tech logos/13.png'),
-        import('../assets/images/tech logos/14.png'),
-        import('../assets/images/tech logos/15.png'),
-        import('../assets/images/tech logos/16.png'),
-        import('../assets/images/tech logos/17.png'),
-      ])
-
       const logoData = [
         {
           order: 1,
@@ -104,6 +84,12 @@ const TechStack = () => {
           order: 16,
           name: '',
           logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2F9.png?alt=media&token=535716c3-051f-485c-b8b1-773bdecfea22',
+        },
+
+        {
+          order: 17,
+          name: '',
+          logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2F14.png?alt=media&token=c2d2f5a6-a27c-426c-a789-77ea62c78dfa',
         },
       ]
 
