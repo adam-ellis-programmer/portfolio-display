@@ -6,7 +6,7 @@ const NavBar = () => {
     { text: 'Skills' },
     { text: 'Show Case' },
     { text: 'Design' },
-    { text: 'seo' },
+    { text: 'Advertising' },
   ]
   return (
     <nav className=' h-25'>

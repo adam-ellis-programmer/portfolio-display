@@ -15,7 +15,7 @@ const SkillsAndTech = () => {
           cupiditate praesentium illo magnam laborum non sit, quod temporibus
           blanditiis soluta repudiandae!{' '}
         </p>
-      </div>
+      </div>      
       <TechStack />
     </section>
   )

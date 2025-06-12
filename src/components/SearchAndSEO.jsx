@@ -1,6 +1,9 @@
 import React from 'react'
 
-import img from '../assets/images/seo/google.png'
+// import img from '../assets/images/seo/google.png'
+
+const img =
+  'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/design%20logos%2Fgoogle.png?alt=media&token=cd4889cd-d0af-47bd-810a-38a04c31893b'
 
 const SearchAndSEO = () => {
   const searchAttributes = [
