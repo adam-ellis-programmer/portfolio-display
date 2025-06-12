@@ -11,7 +11,7 @@ const NavBar = () => {
   return (
     <nav className=' h-25'>
       <div className='mx-width  mx-auto  flex items-center h-full  justify-between'>
-        <p className='text-2xl'>logo placeholder</p>
+        <p className='text-2xl'>adamellis.org</p>
         <ul className='ml-5 flex '>
           {links.map((item, i) => {
             return (

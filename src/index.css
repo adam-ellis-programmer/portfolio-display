@@ -54,3 +54,9 @@ body {
   font-size: 8rem;
   color: #d9042b;
 }
+.hover {
+  transition: transform 500ms ease-in-out;
+}
+.hover:hover {
+  transform: translateY(-0.8rem);
+}

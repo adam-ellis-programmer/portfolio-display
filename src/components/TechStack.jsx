@@ -80,7 +80,7 @@ const TechStack = () => {
           {logos.map((tech, index) => (
             <div
               key={index}
-              className=' flex justify-center items-center shadow p-3 rounded'
+              className='hover flex justify-center items-center shadow-[1px_2px_20px_#ccc]/50 p-3 rounded'
             >
               <img
                 className='h-[150px] w-[150px] object-contain'
