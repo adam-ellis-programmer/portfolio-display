@@ -1,4 +1,4 @@
-const ShowCase = () => {
+const ShowCase = ({showcase}) => {
   const showcaseArr = [
     {
       lineOne: 'MERN',
@@ -106,7 +106,7 @@ const ShowCase = () => {
         </p>
       </div>
       <div className='grid grid-cols-2  gap-5 max-w-[1400px] mx-auto'>
-        {showcaseArr.map((item, i) => {
+        {showcase.map((item, i) => {
           return (
             <div key={i} className='h-100  rounded-[0.6rem] relative hover'>
               {/* <div className='absolute to-0 z-10'>

@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// App.js
+import { useFirebaseData } from './hooks/useFirebaseData'
 import NavBar from './components/NavBar'
 import Hero from './components/Hero'
 import SkillsAndTech from './components/SkillsAndTech'
@@ -10,15 +9,27 @@ import SearchAndSEO from './components/SearchAndSEO'
 import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { data, loading, error } = useFirebaseData()
+
+  if (loading) {
+    return (
+      <div className=' flex h-screen justify-center items-center'>
+        <div className='loading text-6xl'>Loading...</div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return <div className='error'>Error: {error}</div>
+  }
 
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <Hero />
-      <SkillsAndTech />
-      <ShowCase />
-      <DesignSection />
+      <SkillsAndTech techLogos={data.techLogos} />
+      <ShowCase showcase={data.showcase} />
+      <DesignSection designs={data.designs} />
       <SearchAndSEO />
       <Footer />
     </>

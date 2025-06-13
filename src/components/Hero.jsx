@@ -8,24 +8,24 @@ const Hero = () => {
   return (
     <section className=' '>
       {/* main wrap */}
-      <div className='min-h-[calc(100vh-80px)]  grid grid-cols-2  mx-width'>
+      <div className='min-h-[calc(100vh-80px)]  grid lg:grid-cols-2  mx-width'>
         <div className=''>
           <div className='w-fit'>
-            <p className='text-[8rem] font-[300] leading-none text-[#D9042B]'>
+            <p className='text-7xl lg:text-[8rem] font-[300] leading-none text-[#D9042B]'>
               Adam Ellis{' '}
               <span className='text-[#D9042B] -rotate-11 inline-block text-[3rem'>
                 .
               </span>
             </p>
-            <p className='text-[7rem] font-[300] leading-none'>
+            <p className=' text-7xl lg:text-[7rem] font-[300] leading-none'>
               {' '}
               <span className='text-[#D9042B]'>programmer</span>{' '}
               <span className='text-[#D9042B] rotate-7 inline-block'>!</span>
             </p>
-            <p className='text-[2rem] font-[300] leading-none text-end tracking-[1rem] mr-3 mt-2 text-[#203763]'>
+            <p className='text-[2rem] font-[300] leading-none text-start lg:text-end tracking-[1rem] mr-3 mt-2 text-[#203763]'>
               <span className='london-span'>London</span>
             </p>
-            <p className='text-[4rem] font-[300]  text-end tracking-[0.7rem] text-[#203763]'>
+            <p className='text-[4rem] font-[300] text-start  lg:text-end tracking-[0.7rem] text-[#203763]'>
               and designer
             </p>
           </div>

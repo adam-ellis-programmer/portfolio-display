@@ -2,7 +2,7 @@ import React from 'react'
 import SectionHeader from './SectionHeader'
 import TechStack from './TechStack'
 
-const SkillsAndTech = () => {
+const SkillsAndTech = ({techLogos}) => {
   return (
     <section className='min-h-screen  bg-gray-10 0'>
       {/* <SectionHeader text='skills and technologies' /> */}
@@ -16,7 +16,7 @@ const SkillsAndTech = () => {
           blanditiis soluta repudiandae!{' '}
         </p>
       </div>      
-      <TechStack />
+      <TechStack techLogos={techLogos} />
     </section>
   )
 }

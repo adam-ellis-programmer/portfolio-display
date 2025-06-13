@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "seed": "node src/seeder/mainSeeder.js seed",
+    "seed:clear": "node src/seeder/mainSeeder.js clear"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
