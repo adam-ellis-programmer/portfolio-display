@@ -26,6 +26,7 @@ function App() {
   return (
     <>
       {/* <NavBar /> */}
+      <div className='h-20'></div>
       <Hero />
       <SkillsAndTech techLogos={data.techLogos} />
       <ShowCase showcase={data.showcase} />

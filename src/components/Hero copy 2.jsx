@@ -29,14 +29,8 @@ const Hero = () => {
             </div>
           </div>
           {/*  */}
-          <div className='max-w-[600px] m-auto mt-10 text-justify p-10 md:p-0'>
-            <div className='flex md:hidden justify-start'>
-              <img className='w-90 md:w-130 ' src={img} alt='' />
-            </div>
-            <div className=' flex justify-center items-center mb-5'>
-              <i className='fa-solid fa-circle-info text-[1.5rem]'></i>
-              <p className='text-2xlmy-5 text-2xl mx-3'>quick bio</p>
-            </div>
+          <div className='max-w-[600px] m-auto mt-10 text-justify'>
+            <p className='text-2xl text-center my-5'>quick bio</p>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Praesentium fuga officia consectetur reprehenderit temporibus hic
@@ -53,19 +47,17 @@ const Hero = () => {
               quibusdam libero eligendi facilis. Incidunt, exercitationem
               voluptatibus?
             </p>
-
-            <HeroButtons />
           </div>
         </div>
         {/*  */}
         <div className='flex justify-center '>
           <div className=''>
             {/* <p className='text-center text-6xl absolute'>digital design and production!</p> */}
-            <div className=' hidden md:flex justify-start'>
-              <img className='w-90 md:w-130 ' src={img} alt='' />
+            <div className=' flex justify-start'>
+              <img className='w-130 ' src={img} alt='' />
             </div>
             <div className=' mt-5'>
-              <div className='max-w-[400px] mx-auto  text-end'>
+              <div className='  max-w-[400px] mx-auto  text-end'>
                 <p className='  text-2xl tracking-[0.5rem]'>over 10 projects</p>
                 <p className='text-2xl tracking-[0.7rem]'>available for</p>
                 <p className='text-2xl tracking-[0.9rem]'> demoing</p>
