@@ -94,7 +94,7 @@ const ShowCase = ({showcase}) => {
   return (
     <section id="showCase" className='min-h-screen'>
       <h3 className='text-4xl text-center my-5'>Showcased Projects</h3>
-      <div className='max-w-[1200px] m-auto grid md:grid-cols-2 my-5'>
+      <div className='px-5 md:px-0 max-w-[1200px] m-auto grid md:grid-cols-2 my-5'>
         <div></div>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque iusto

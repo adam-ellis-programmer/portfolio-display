@@ -25,7 +25,7 @@ const DesignSection = ({designs}) => {
     <section id='design' className='mt-10'>
       <div className='max-w-[1300px] m-auto'>
         <h3 className='text-4xl text-center my-10'>Design Software</h3>
-        <div className='grid md:grid-cols-2'>
+        <div className='grid md:grid-cols-2 px-5 md:px-0'>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             similique qui, eveniet voluptatibus aut hic doloremque voluptate
