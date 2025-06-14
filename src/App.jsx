@@ -29,6 +29,7 @@ function App() {
       {/* add in a video section for marketing vids and posters */}
       {/* messages in the firebase property project */}
       <NavBar />
+      
       <Hero />
       <SkillsAndTech techLogos={data.techLogos} />
       <ShowCase showcase={data.showcase} />

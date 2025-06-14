@@ -1,4 +1,4 @@
-const ShowCase = ({showcase}) => {
+const ShowCase = ({ showcase }) => {
   const showcaseArr = [
     {
       lineOne: 'MERN',
@@ -92,7 +92,7 @@ const ShowCase = ({showcase}) => {
     },
   ]
   return (
-    <section id="showCase" className='min-h-screen'>
+    <section id='showCase' className='min-h-screen'>
       <h3 className='text-4xl text-center my-5'>Showcased Projects</h3>
       <div className='px-5 md:px-0 max-w-[1200px] m-auto grid md:grid-cols-2 my-5'>
         <div></div>
@@ -109,21 +109,23 @@ const ShowCase = ({showcase}) => {
         {showcase.map((item, i) => {
           return (
             <div key={i} className='h-100  rounded-[0.6rem] relative hover'>
-              {/* <div className='absolute to-0 z-10'>
+              <a href={item.link}>
+                {/* <div className='absolute to-0 z-10'>
                 <div className='text-white'>
                   <i className='fa-solid fa-layer-group'></i>
                   <span>full stack</span>
                 </div>
               </div> */}
-              <div className='absolute top-0 bottom-0 left-0 right-0 bg-[#012840]/50 flex items-center justify-center rounded-[0.6rem] flex-col'>
-                <h3 className='text-white text-3xl'>{item.lineOne}</h3>
-                <p className='text-2xl text-white'>{item.lineTwo} </p>
-              </div>
-              <img
-                className='w-full h-full object-center rounded-[0.6rem] '
-                src={item.url}
-                alt=''
-              />
+                <div className='absolute top-0 bottom-0 left-0 right-0 bg-[#012840]/50 flex items-center justify-center rounded-[0.6rem] flex-col'>
+                  <h3 className='text-white text-3xl'>{item.lineOne}</h3>
+                  <p className='text-2xl text-white'>{item.lineTwo} </p>
+                </div>
+                <img
+                  className='w-full h-full object-center rounded-[0.6rem] '
+                  src={item.url}
+                  alt=''
+                />
+              </a>
             </div>
           )
         })}

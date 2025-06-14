@@ -1,6 +1,7 @@
 import React from 'react'
 import img from '../assets/images/group.png'
 import HeroButtons from './HeroButtons'
+import SocialLinks from './SocialLinks'
 
 const name = 'designer'
 const Hero = () => {
@@ -55,6 +56,7 @@ const Hero = () => {
             </p>
 
             <HeroButtons />
+            <SocialLinks />
             {/* <p className='text-center mt-15 animate-pulse text-2xl text-rose-500'>
               <span>scroll down for more</span>
             </p> */}
