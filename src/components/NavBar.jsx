@@ -3,6 +3,8 @@ import MobileNav from './MobileNav'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
+import img from '../assets/logo.png'
+
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false)
   const links = [
@@ -27,7 +29,7 @@ const NavBar = () => {
   return (
     <nav className=' h-25 '>
       <div className='mx-width  mx-auto  flex items-center h-full  justify-between px-10'>
-        <p className='text-3xl'>adamellis</p>
+        <img className='w-40' src={img} alt="" />
         <button
           className='block lg:hidden'
           onClick={() => {

@@ -7,7 +7,7 @@ const name = 'designer'
 const Hero = () => {
   //h-[calc(100vh-80px)]
   return (
-    <section className=' '>
+    <section className=''>
       {/* main wrap */}
       <div className='min-h-[calc(100vh-80px)]  grid grid-cols-1 md:grid-cols-2  mx-width  '>
         <div className=''>
