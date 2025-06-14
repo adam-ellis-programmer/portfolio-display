@@ -87,6 +87,16 @@ export const showcaseArr = [
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fcomfy-project.png?alt=media&token=9fd95778-be74-4efc-be4d-bb0fe18a57e9',
     gitLink: '',
     show: true,
-    order: 8,
+    order: 9,
+  },
+  {
+    lineOne: 'MERN',
+    lineTwo: 'job search tracking site',
+    fullStack: false,
+    link: 'https://jobify-frontend-olive.vercel.app/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fjobify.png?alt=media&token=b85881e6-6f45-4a40-9fa4-018888dd7a6a',
+    gitLink: '',
+    show: true,
+    order: 10,
   },
 ]
