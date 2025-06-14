@@ -92,9 +92,9 @@ const ShowCase = ({showcase}) => {
     },
   ]
   return (
-    <section className='min-h-screen'>
+    <section id="showCase" className='min-h-screen'>
       <h3 className='text-4xl text-center my-5'>Showcased Projects</h3>
-      <div className='max-w-[1200px] m-auto grid grid-cols-2 my-5'>
+      <div className='max-w-[1200px] m-auto grid md:grid-cols-2 my-5'>
         <div></div>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque iusto
@@ -105,7 +105,7 @@ const ShowCase = ({showcase}) => {
           voluptatibus perferendis inventore esse dolorum nam!
         </p>
       </div>
-      <div className='grid grid-cols-2  gap-5 max-w-[1400px] mx-auto'>
+      <div className='grid md:grid-cols-2  gap-5 max-w-[1400px] mx-auto'>
         {showcase.map((item, i) => {
           return (
             <div key={i} className='h-100  rounded-[0.6rem] relative hover'>

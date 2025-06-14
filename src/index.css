@@ -9,6 +9,10 @@ body {
   /* color: #fff; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .mx-width {
     max-width: 1600px;

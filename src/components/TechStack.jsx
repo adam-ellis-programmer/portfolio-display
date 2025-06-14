@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 
 const TechStack = ({ techLogos }) => {
+
+
   const technologies = [
     'django',
     'express',
@@ -28,7 +30,7 @@ const TechStack = ({ techLogos }) => {
   return (
     <div className=''>
       <div className='max-w-[1250px] mx-auto'>
-        <div className='tech-stack grid grid-cols-4  gap-5'>
+        <div className='tech-stack grid grid-cols-2 md:grid-cols-4  gap-5'>
           {techLogos.map((tech, index) => (
             <div
               key={index}
@@ -43,7 +45,7 @@ const TechStack = ({ techLogos }) => {
           ))}
         </div>
 
-        <ul className='grid grid-cols-4 mt-15'>
+        <ul className='grid grid-cols-2 md:grid-cols-4 mt-15'>
           {technologies?.map((item, i) => {
             return (
               <li key={i} className='flex items-center mb-1 '>

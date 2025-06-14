@@ -2,11 +2,11 @@ import React from 'react'
 
 const NavBar = () => {
   const links = [
-    { text: 'Home' },
-    { text: 'Skills' },
-    { text: 'Show Case' },
-    { text: 'Design' },
-    { text: 'Advertising' },
+    { text: 'Home' , link: '#home' },
+    { text: 'Skills' , link: '#skills'},
+    { text: 'Show Case' , link: '#showCase'},
+    { text: 'Design' , link: '#design'},
+    { text: 'Advertising', link: '#advertising' },
   ]
   return (
     <nav className=' h-25'>
@@ -16,7 +16,7 @@ const NavBar = () => {
           {links.map((item, i) => {
             return (
               <li className='w-30 text-center mx-1 text-[1.2rem]' key={i}>
-                {item.text}
+                <a href={item.link}>{item.text}</a>
               </li>
             )
           })}

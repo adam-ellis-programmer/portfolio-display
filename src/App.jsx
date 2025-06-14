@@ -25,8 +25,9 @@ function App() {
 
   return (
     <>
-      {/* <NavBar /> */}
-      <div className='h-20'></div>
+      {/* ----- change firebase admin data ----- */}
+      {/* add in a video section for marketing vids and posters */}
+      <NavBar />
       <Hero />
       <SkillsAndTech techLogos={data.techLogos} />
       <ShowCase showcase={data.showcase} />

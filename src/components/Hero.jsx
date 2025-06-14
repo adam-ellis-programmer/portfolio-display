@@ -23,8 +23,8 @@ const Hero = () => {
               </div>
               {/*  */}
               <div className=' text-2xl  mt-5 leading-[2.4rem] text-end'>
-                <p className='tracking-[1em]'>designer</p>
-                <p className='tracking-[1rem] '>London</p>
+                <p className='tracking-[1em]'>& designer</p>
+                <p className='tracking-[1rem] mr-5'>London</p>
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@ const Hero = () => {
             <div className='flex md:hidden justify-start'>
               <img className='w-90 md:w-130 ' src={img} alt='' />
             </div>
-            <div className=' flex justify-center items-center mb-5'>
+            <div className=' flex justify-center items-center mb-5 '>
               <i className='fa-solid fa-circle-info text-[1.5rem]'></i>
               <p className='text-2xlmy-5 text-2xl mx-3'>quick bio</p>
             </div>
@@ -55,6 +55,9 @@ const Hero = () => {
             </p>
 
             <HeroButtons />
+            {/* <p className='text-center mt-15 animate-pulse text-2xl text-rose-500'>
+              <span>scroll down for more</span>
+            </p> */}
           </div>
         </div>
         {/*  */}

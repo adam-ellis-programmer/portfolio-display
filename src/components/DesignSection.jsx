@@ -22,10 +22,10 @@ const DesignSection = ({designs}) => {
     'apple motion',
   ]
   return (
-    <section className='mt-10'>
+    <section id='design' className='mt-10'>
       <div className='max-w-[1300px] m-auto'>
         <h3 className='text-4xl text-center my-10'>Design Software</h3>
-        <div className='grid grid-cols-2'>
+        <div className='grid md:grid-cols-2'>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
             similique qui, eveniet voluptatibus aut hic doloremque voluptate
@@ -41,7 +41,7 @@ const DesignSection = ({designs}) => {
         </div>
 
         <div className=' mt-18'>
-          <div className='grid grid-cols-7 gap-6 '>
+          <div className='grid grid-cols-2 md:grid-cols-7 gap-6 '>
             {designs.map((item, i) => {
               return (
                 <div
@@ -59,7 +59,7 @@ const DesignSection = ({designs}) => {
           </div>
 
           <div>
-            <ul className=' mt-20 grid grid-cols-3'>
+            <ul className=' mt-20 grid grid-cols-2 md:grid-cols-3'>
               {designTools.map((item, i) => {
                 return (
                   <li key={i} className='flex items-center'>

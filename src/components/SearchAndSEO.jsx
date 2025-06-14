@@ -15,10 +15,10 @@ const SearchAndSEO = () => {
     'Smart Campaigns',
   ]
   return (
-    <section className=' mt-10 '>
+    <section id='advertising' className=' mt-10 '>
       <h3 className='text-4xl text-center my-10'>Search and SEO</h3>
       <div className='max-w-[1200px] m-auto'>
-        <div className='m-auto grid grid-cols-2'>
+        <div className='m-auto grid md:grid-cols-2'>
           <div></div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
