@@ -138,7 +138,7 @@ const ShowCase = ({ showcase }) => {
               </div> */}
           <div className='absolute top-0 bottom-0 left-0 right-0 bg-[#012840]/50 flex items-center justify-center rounded-[0.6rem] flex-col'>
             <h3 className='text-white text-3xl capitalize'>
-              new project comming soon!
+              new project coming soon!
             </h3>
             <p className='text-2xl text-white capitalize'> stay tuned... </p>
           </div>
