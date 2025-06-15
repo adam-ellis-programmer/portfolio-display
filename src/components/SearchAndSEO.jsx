@@ -16,7 +16,7 @@ const SearchAndSEO = () => {
   ]
   return (
     <section id='advertising' className=' mt-10 px-5 md:px-0'>
-      <h3 className='text-4xl text-center my-10'>Search and SEO</h3>
+      <h3 className='text-4xl text-center my-10'>Advertising | Search | SEO</h3>
       <div className='max-w-[1200px] m-auto'>
         <div className='m-auto grid md:grid-cols-2'>
           <div></div>
