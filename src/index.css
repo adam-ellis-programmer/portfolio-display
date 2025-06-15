@@ -65,6 +65,13 @@ html {
   transform: translateY(-0.8rem);
 }
 
-.nav-open{
+.nav-open {
   overflow: hidden;
 }
+
+.clamp-test {
+  font-size: clamp(3.5rem, 6vw, 4.5rem);
+  line-height: 1;
+}
+
+

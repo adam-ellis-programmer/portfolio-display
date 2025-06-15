@@ -17,7 +17,11 @@ const Hero = () => {
               <div className=''>
                 {/*  */}
                 {/* use clamp */}
-                <p className='text-7xl tracking-widest'>Adam Ellis</p>
+                <p
+                  className=' tracking-widest clamp-test'
+                >
+                  Adam Ellis
+                </p>
                 <p className='text-6xl tracking-[0.4rem] text-center mt-1'>
                   programmer
                 </p>
