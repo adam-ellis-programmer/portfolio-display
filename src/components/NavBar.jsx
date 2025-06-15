@@ -8,7 +8,7 @@ import img from '../assets/logo.png'
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false)
   const links = [
-    { text: 'Home', link: '#home' },
+    // { text: 'Home', link: '#home' },
     { text: 'Skills', link: '#skills' },
     { text: 'Show Case', link: '#showCase' },
     { text: 'Design', link: '#design' },
