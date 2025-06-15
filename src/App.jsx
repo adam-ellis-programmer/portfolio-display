@@ -7,6 +7,7 @@ import ShowCase from './components/ShowCase'
 import DesignSection from './components/DesignSection'
 import SearchAndSEO from './components/SearchAndSEO'
 import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 
 function App() {
   const { data, loading, error } = useFirebaseData()
@@ -36,6 +37,7 @@ function App() {
       <DesignSection designs={data.designs} />
       <SearchAndSEO />
       <Footer />
+      <BackToTop />
     </>
   )
 }
