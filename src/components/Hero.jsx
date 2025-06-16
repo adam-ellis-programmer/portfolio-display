@@ -2,6 +2,7 @@ import React from 'react'
 import img from '../assets/images/group.png'
 import HeroButtons from './HeroButtons'
 import SocialLinks from './SocialLinks'
+import HeroImg from './HeroImg'
 
 const name = 'designer'
 const Hero = () => {
@@ -11,18 +12,11 @@ const Hero = () => {
       {/* main wrap */}
       <div className='min-h-[calc(100vh-80px)]  grid grid-cols-1 md:grid-cols-2  mx-width  '>
         <div className=''>
-          {/* make two / three grid columns so we can have the image below the header */}
           <div className=' flex justify-center'>
             <div className=' w-fit '>
               <div className=''>
-                {/*  */}
-                {/* use clamp */}
-                <p
-                  className=' tracking-widest clamp-test'
-                >
-                  Adam Ellis
-                </p>
-                <p className='text-6xl tracking-[0.4rem] text-center mt-1'>
+                <p className=' tracking-widest clamp-hero-p'>Adam Ellis</p>
+                <p className='text-6xl tracking-[0.4rem] clamp-hero-p-1 mt-1'>
                   programmer
                 </p>
               </div>
@@ -36,7 +30,7 @@ const Hero = () => {
           {/*  */}
           <div className='max-w-[600px] m-auto mt-10 text-justify p-10 md:p-0'>
             <div className='flex md:hidden justify-start'>
-              <img className='w-90 md:w-130 ' src={img} alt='' />
+              <HeroImg />
             </div>
             <div className=' flex justify-center items-center mb-5 '>
               <i className='fa-solid fa-circle-info text-[1.5rem]'></i>
@@ -71,7 +65,7 @@ const Hero = () => {
           <div className=''>
             {/* <p className='text-center text-6xl absolute'>digital design and production!</p> */}
             <div className=' hidden md:flex justify-start'>
-              <img className='w-90 md:w-130 ' src={img} alt='' />
+              <HeroImg />
             </div>
             <div className=' mt-5'>
               <div className='max-w-[400px] mx-auto  text-end'>
