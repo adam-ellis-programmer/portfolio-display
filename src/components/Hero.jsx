@@ -1,5 +1,4 @@
-import React from 'react'
-import img from '../assets/images/group.png'
+
 import HeroButtons from './HeroButtons'
 import SocialLinks from './SocialLinks'
 import HeroImg from './HeroImg'
