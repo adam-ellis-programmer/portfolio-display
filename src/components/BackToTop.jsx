@@ -31,7 +31,7 @@ const BackToTop = () => {
 
   return (
     <div className='flex justify-end px-10 fixed bottom-10 w-full z-10'>
-      <button onClick={handleClick} className='cursor-pointer'>
+      <button onClick={handleClick} className='cursor-pointer text-[#6D84B0]'>
         <i className='fa-regular fa-circle-up text-5xl'></i>
       </button>
     </div>
