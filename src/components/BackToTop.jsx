@@ -24,6 +24,7 @@ const BackToTop = () => {
 
   const handleClick = () => {
     scrollTo({ top: 0, behavior: 'smooth' })
+    window.history.pushState(null, null, '/')
   }
 
   // Don't render if not visible
