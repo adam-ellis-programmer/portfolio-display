@@ -97,18 +97,26 @@ const ShowCase = ({ showcase }) => {
       <div className='px-5 md:px-0 max-w-[1200px] m-auto grid md:grid-cols-2 my-5'>
         <div></div>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque iusto
-          hic nobis? Ipsam odit explicabo architecto perferendis ex non atque
-          similique recusandae, sapiente exercitationem consectetur officia,
-          quidem eum, temporibus animi sit sed deserunt laborum vel! Corporis
-          alias qui animi, nobis laborum incidunt nihil, dignissimos
-          voluptatibus perferendis inventore esse dolorum nam!
+          Adam's showcased projects demonstrate his versatility and technical
+          depth across various platforms and technologies. His portfolio
+          features full-stack MERN applications that highlight his ability to
+          seamlessly integrate MongoDB, Express.js, React, and Node.js into
+          cohesive web solutions. Additionally, his Firebase projects showcase
+          expertise in modern cloud-based development, utilizing real-time
+          databases and authentication systems. Adam has also developed robust
+          Python applications that demonstrate his proficiency in backend
+          development and data processing. His e-commerce projects particularly
+          stand out, featuring secure payment integrations, user-friendly
+          interfaces, and scalable architectures. Each project reflects his
+          commitment to clean code, responsive design, and user-centered
+          development, illustrating how his combined design and programming
+          background creates exceptional digital experiences.
         </p>
       </div>
       <div className='grid md:grid-cols-2  gap-5 max-w-[1400px] mx-auto'>
         {showcase.map((item, i) => {
           return (
-            <div key={i} className='h-100  rounded-[0.6rem] relative hover'>
+            <div key={i} className=' rounded-[0.6rem] relative hover'>
               <a href={item.link}>
                 {/* <div className='absolute to-0 z-10'>
                 <div className='text-white'>
@@ -121,7 +129,7 @@ const ShowCase = ({ showcase }) => {
                   <p className='text-2xl text-white'>{item.lineTwo} </p>
                 </div>
                 <img
-                  className='w-full h-full object-center rounded-[0.6rem] '
+                  className='w-full   rounded-[0.6rem] '
                   src={item.url}
                   alt=''
                 />

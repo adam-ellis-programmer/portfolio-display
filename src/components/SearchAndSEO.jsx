@@ -21,12 +21,11 @@ const SearchAndSEO = () => {
         <div className='m-auto grid md:grid-cols-2'>
           <div></div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            molestiae, necessitatibus possimus, dolorem rem quasi eveniet veniam
-            rerum ducimus eligendi consequuntur asperiores dolor atque
-            cupiditate culpa dolore corrupti, eos natus quas et? Eius explicabo
-            natus veritatis fuga optio qui unde, nisi hic possimus, sed ab animi
-            sapiente in. Ipsum, odit.
+            Adam has extensive digital advertising experience across Search,
+            Display, YouTube, Shopping, and App Ads, plus Smart Campaigns. His
+            SEO expertise and technical skills uniquely position him to create
+            websites that function flawlessly while performing exceptionally in
+            search rankings and marketing campaigns.
           </p>
         </div>
 

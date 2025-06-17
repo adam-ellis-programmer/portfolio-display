@@ -8,9 +8,7 @@ import logo5 from '../assets/images/design logos/5.png'
 import logo6 from '../assets/images/design logos/6.png'
 import logo7 from '../assets/images/design logos/7.png'
 // prettier-ignore
-const DesignSection = ({designs}) => {
-
-
+const DesignSection = ({ designs }) => {
   const designTools = [
     'photo shop',
     'illustrator',
@@ -27,16 +25,21 @@ const DesignSection = ({designs}) => {
         <h3 className='text-4xl text-center my-10'>Design Software</h3>
         <div className='grid md:grid-cols-2 px-5 md:px-0'>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            similique qui, eveniet voluptatibus aut hic doloremque voluptate
-            cumque, quo sit facilis quaerat labore, atque in accusantium
-            expedita minima. Quasi nulla omnis voluptas ducimus beatae assumenda
-            debitis officiis dignissimos quia mollitia quisquam unde, corrupti
-            expedita magni eveniet autem quam eos, nesciunt facere vel ad nisi.
-            Est voluptatem, provident aspernatur ex earum totam harum et
-            reiciendis, debitis ullam ad libero, asperiores blanditiis quo
-            quibusdam sapiente modi adipisci doloribus molestias eveniet? Ab,
-            maiores.
+            Adam brings over ten years of comprehensive design software
+            experience to every project, with particular expertise in the Adobe
+            Creative Suite. His proficiency spans video production and editing,
+            where he creates engaging content for various platforms and
+            purposes. Adam excels at designing eye-catching marketing materials,
+            including social media posters that capture attention and drive
+            engagement across digital channels. His skills extend to print
+            design, where he develops professional brochures and materials for
+            mass distribution, ensuring consistent brand messaging and visual
+            impact. Additionally, Adam's photo and video editing capabilities
+            allow him to enhance and refine visual content to professional
+            standards. This extensive design software experience, combined with
+            his technical programming skills, enables him to create cohesive
+            digital experiences that are both visually stunning and functionally
+            robust.
           </p>
         </div>
 

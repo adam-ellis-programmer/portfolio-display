@@ -29,7 +29,7 @@ const NavBar = () => {
   return (
     <nav className=' h-25 '>
       <div className='mx-width  mx-auto  flex items-center h-full  justify-between px-10'>
-        <img className='w-40' src={img} alt="" />
+        <img className='w-40' src={img} alt='' />
         <button
           className='block lg:hidden'
           onClick={() => {
@@ -41,8 +41,10 @@ const NavBar = () => {
         <ul className='ml-5  hidden lg:flex'>
           {links.map((item, i) => {
             return (
-              <li className='w-30 text-center mx-1 text-[1.2rem]' key={i}>
-                <a href={item.link}>{item.text}</a>
+              <li className='w-30 text-center mx-1 text-[1.2rem] ' key={i}>
+                <span className='main-nav-li'>
+                  <a href={item.link}>{item.text}</a>
+                </span>
               </li>
             )
           })}

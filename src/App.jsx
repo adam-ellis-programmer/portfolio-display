@@ -8,6 +8,7 @@ import DesignSection from './components/DesignSection'
 import SearchAndSEO from './components/SearchAndSEO'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
+import Contact from './components/Contact'
 
 function App() {
   const { data, loading, error } = useFirebaseData()
@@ -26,16 +27,13 @@ function App() {
 
   return (
     <>
-      {/* ----- change firebase admin data ----- */}
-      {/* add in a video section for marketing vids and posters */}
-      {/* messages in the firebase property project */}
       <NavBar />
-
       <Hero />
       <SkillsAndTech techLogos={data.techLogos} />
       <ShowCase showcase={data.showcase} />
       <DesignSection designs={data.designs} />
       <SearchAndSEO />
+      <Contact />
       <Footer />
       <BackToTop />
     </>

@@ -1,4 +1,3 @@
-
 import HeroButtons from './HeroButtons'
 import SocialLinks from './SocialLinks'
 import HeroImg from './HeroImg'
@@ -36,20 +35,18 @@ const Hero = () => {
               <p className='text-2xlmy-5 text-2xl mx-3'>quick bio</p>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium fuga officia consectetur reprehenderit temporibus hic
-              nam aperiam necessitatibus repellat consequuntur eius porro
-              quaerat ullam delectus suscipit, voluptatem laboriosam debitis
-              veritatis id! Quod soluta obcaecati dignissimos deleniti commodi
-              voluptatum asperiores non sunt exercitationem laudantium. Dolorem,
-              voluptate alias ipsum voluptatum recusandae ex qui veniam, eos
-              consectetur a est repudiandae. Accusantium nam dolorem explicabo
-              quod quia officiis alias obcaecati, voluptatibus reprehenderit
-              eius quisquam corrupti incidunt tempora ab dolore et est numquam
-              ipsam excepturi. Amet voluptates repudiandae, veritatis voluptate
-              ratione vel nulla eveniet, dolor blanditiis exercitationem alias
-              quibusdam libero eligendi facilis. Incidunt, exercitationem
-              voluptatibus?
+              Adam is a seasoned technology professional with over ten years of
+              design experience and more than five years of programming
+              expertise. Throughout his career, he has developed a unique blend
+              of creative vision and technical implementation skills, allowing
+              him to bridge the gap between aesthetic design and functional
+              code. His extensive background in design provides him with a deep
+              understanding of user experience principles, visual communication,
+              and interface aesthetics, while his programming skills enable him
+              to bring complex digital concepts to life. Adam's dual expertise
+              makes him particularly valuable in creating cohesive,
+              user-centered digital solutions that are both visually compelling
+              and technically robust.
             </p>
 
             <HeroButtons />

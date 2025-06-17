@@ -64,7 +64,7 @@ export const showcaseArr = [
     lineTwo: 'admin functionality',
     fullStack: false,
     link: 'https://firebase-admin-pannel-updated.vercel.app/',
-    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ffirebase-admin.png?alt=media&token=4aabd2a0-e254-4deb-9873-82196da15014',
+    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ffirebase-admin.png?alt=media&token=7f97794f-d00c-4ac9-80f5-4da8f6bfeb8a',
     gitLink: '',
     show: true,
     order: 7,
