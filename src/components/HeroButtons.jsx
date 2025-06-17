@@ -1,9 +1,20 @@
 import React from 'react'
 
+// make a reques to firebase to get the project urls for the random project button
+
 const handleContactClick = () => {
-  //...
+  const contactSection = document.getElementById('contact')
+  if (contactSection) {
+    contactSection.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
+  }
+  // Optional: Update URL hash without page jump
+  window.history.pushState(null, null, '#contact')
   console.log('contact click')
 }
+
 const handleRandomClick = () => {
   //...
   console.log('random click')
