@@ -3,7 +3,7 @@ import SocialLinks from './SocialLinks'
 import HeroImg from './HeroImg'
 
 const name = 'designer'
-const Hero = () => {
+const Hero = ({showcase}) => {
   //h-[calc(100vh-80px)]
   return (
     <section className=''>
@@ -49,7 +49,7 @@ const Hero = () => {
               and technically robust.
             </p>
 
-            <HeroButtons />
+            <HeroButtons showcase={showcase} />
             <SocialLinks />
             {/* <p className='text-center mt-15 animate-pulse text-2xl text-rose-500'>
               <span>scroll down for more</span>

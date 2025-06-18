@@ -1,6 +1,4 @@
-import React from 'react'
-
-// make a reques to firebase to get the project urls for the random project button
+import { useState } from 'react'
 
 const handleContactClick = () => {
   const contactSection = document.getElementById('contact')
@@ -15,12 +13,44 @@ const handleContactClick = () => {
   console.log('contact click')
 }
 
-const handleRandomClick = () => {
-  //...
-  console.log('random click')
-}
+const HeroButtons = ({ showcase }) => {
+  // Track the last random index to avoid duplicates
+  const [lastRandomIndex, setLastRandomIndex] = useState(-1)
 
-const HeroButtons = () => {
+  const handleRandomClick = () => {
+    if (showcase && showcase.length > 0) {
+      let randomIndex
+
+      // If there's only one item, we can't avoid duplicates
+      if (showcase.length === 1) {
+        randomIndex = 0
+      } else {
+        // Keep generating until we get a different index
+        do {
+          randomIndex = Math.floor(Math.random() * showcase.length)
+          // while true! This means: "Keep looping AS LONG AS the new random number equals the last one we picked"
+          // Check: 1 === 1 (lastRandomIndex) → TRUE → loop again
+          // Check: 3 === 1 → FALSE → exit loop
+          // Set lastRandomIndex = 3
+          // Open showcase[3].link
+          // This guarantees we don't get the same project twice in a row!
+        } while (randomIndex === lastRandomIndex)
+      }
+
+      // Update the last selected index
+      setLastRandomIndex(randomIndex)
+
+      const randomProject = showcase[randomIndex]
+
+      // Navigate to the random project
+      if (randomProject.link) {
+        window.open(randomProject.link, '_blank') // Opens in new tab
+      }
+    } else {
+      console.log('No showcase items available')
+    }
+  }
+
   return (
     <div className='flex justify-center mt-5 '>
       <button

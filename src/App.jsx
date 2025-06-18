@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <Hero />
+      <Hero showcase={data.showcase} />
       <SkillsAndTech techLogos={data.techLogos} />
       <ShowCase showcase={data.showcase} />
       <DesignSection designs={data.designs} />

@@ -12,7 +12,7 @@ const Contact = () => {
         </div>
         <div className='flex md:justify-center items-center'>
           <i className='fa-solid fa-square-phone text-5xl mr-5'></i>
-          <span className='text-2xl'>07863807071</span>
+          <span className='text-2xl'>07788776541</span>
         </div>
       </div>
     </section>

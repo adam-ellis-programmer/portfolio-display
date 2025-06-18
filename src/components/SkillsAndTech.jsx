@@ -2,6 +2,8 @@ import React from 'react'
 import SectionHeader from './SectionHeader'
 import TechStack from './TechStack'
 
+import img from '../assets/images/laptop.jpg'
+
 const SkillsAndTech = ({ techLogos }) => {
   return (
     <section id='skills' className='min-h-screen  bg-gray-10 0'>
@@ -10,7 +12,9 @@ const SkillsAndTech = ({ techLogos }) => {
         Skills And Technologies
       </h3>
       <div className='px-5 md:px-0 max-w-[1200px] m-auto grid md:grid-cols-2 mb-5'>
-        <div></div>
+        <div className='flex justify-center items-center'>
+          {/* <img className='w-1/2 h-40 rounded-2xl object-center' src={img} alt="" srcset="" /> */}
+        </div>
         <p>
           Adam is fully proficient in the following technologies and has
           developed expertise across multiple programming languages and
