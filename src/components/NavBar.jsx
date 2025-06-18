@@ -28,7 +28,7 @@ const NavBar = () => {
   }, [isNavOpen])
 
   return (
-    <nav className=' h-25 shadow md:shadow-none'>
+    <nav className=' h-25 shadow md:shadow-none mb-5 md:mb-0'>
       <div className='mx-width  mx-auto  flex items-center h-full  justify-between px-10'>
         <img className='w-40' src={img} alt='' />
         <button
