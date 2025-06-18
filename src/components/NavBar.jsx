@@ -13,7 +13,7 @@ const NavBar = () => {
     { text: 'Show Case', link: '#showCase' },
     { text: 'Design', link: '#design' },
     { text: 'Advertising', link: '#advertising' },
-    { text: 'contact', link: '#contact' },
+    { text: 'Contact', link: '#contact' },
   ]
 
   // stops body from scrolling underneath mobile nav
