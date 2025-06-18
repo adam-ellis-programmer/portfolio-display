@@ -13,6 +13,7 @@ const NavBar = () => {
     { text: 'Show Case', link: '#showCase' },
     { text: 'Design', link: '#design' },
     { text: 'Advertising', link: '#advertising' },
+    { text: 'contact', link: '#contact' },
   ]
 
   // stops body from scrolling underneath mobile nav
@@ -27,7 +28,7 @@ const NavBar = () => {
   }, [isNavOpen])
 
   return (
-    <nav className=' h-25 '>
+    <nav className=' h-25 shadow md:shadow-none'>
       <div className='mx-width  mx-auto  flex items-center h-full  justify-between px-10'>
         <img className='w-40' src={img} alt='' />
         <button

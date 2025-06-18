@@ -5,7 +5,7 @@ const TechStack = ({ techLogos }) => {
     (a, b) => (a.order || 0) - (b.order || 0)
   )
 
-  console.log('sorted logos---->', sortedLogos)
+  // console.log('sorted logos---->', sortedLogos)
 
   // All items with missing order get value 0
   // All items with 0 are considered "equal" in the sort comparison
