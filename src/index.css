@@ -9,6 +9,11 @@ body {
   color: #dfd6d6; */
 }
 
+::selection {
+  background-color: #007acc;
+  color: white;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -27,6 +32,7 @@ html {
 .london-span {
   position: relative;
 }
+
 .london-span::after {
   content: '';
   position: absolute;
@@ -58,11 +64,15 @@ html {
   font-size: 8rem;
   color: #d9042b;
 }
-.hover {
-  transition: transform 500ms ease-in-out;
-}
-.hover:hover {
-  transform: translateY(-0.8rem);
+
+@media screen and (min-width: 600px) {
+  .hover {
+    transition: transform 500ms ease-in-out;
+  }
+
+  .hover:hover {
+    transform: translateY(-0.8rem);
+  }
 }
 
 .nav-open {

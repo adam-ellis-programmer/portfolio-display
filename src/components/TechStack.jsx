@@ -64,7 +64,7 @@ const TechStack = ({ techLogos }) => {
           ))}
         </div>
 
-        <ul className='grid grid-cols-2 md:grid-cols-4 mt-15'>
+        <ul className='grid grid-cols-2 md:grid-cols-4 mt-15 px-5 md:px-0'>
           {sortedLogos?.map((item, i) => {
             return (
               <li key={i} className='flex items-center mb-1 '>

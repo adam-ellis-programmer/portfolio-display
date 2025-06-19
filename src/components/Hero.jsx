@@ -3,12 +3,13 @@ import SocialLinks from './SocialLinks'
 import HeroImg from './HeroImg'
 
 const name = 'designer'
-const Hero = ({showcase}) => {
+const Hero = ({ showcase }) => {
   //h-[calc(100vh-80px)]
+  //min-h-[calc(100vh-80px)]
   return (
     <section className=''>
       {/* main wrap */}
-      <div className='min-h-[calc(100vh-80px)]  grid grid-cols-1 md:grid-cols-2  mx-width  '>
+      <div className='  grid grid-cols-1 md:grid-cols-2  mx-width px-10  mb-20'>
         <div className=''>
           <div className=' flex justify-center'>
             <div className=' w-fit '>
@@ -26,7 +27,7 @@ const Hero = ({showcase}) => {
             </div>
           </div>
           {/*  */}
-          <div className='max-w-[600px] m-auto mt-10 text-justify p-10 md:p-0'>
+          <div className='max-w-[600px] m-auto mt-10 text-justify '>
             <div className='flex md:hidden justify-start'>
               <HeroImg />
             </div>

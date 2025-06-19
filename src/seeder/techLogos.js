@@ -94,4 +94,9 @@ export const techlogoData = [
     name: 'Next.js',
     logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/design%20logos%2FNext.js.png?alt=media&token=44bfa37d-d881-4b6f-b8f6-0ba23c99300d',
   },
+  {
+    order: 20,
+    name: 'AWS',
+    logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/design%20logos%2Faws.png?alt=media&token=701b3c54-c677-4083-9976-fd5fe8991407',
+  },
 ]
