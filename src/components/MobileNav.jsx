@@ -10,10 +10,16 @@ const MobileNav = ({ setIsNavOpen, links }) => {
       </div>
 
       <ul>
-        {links.map((item) => {
+        {links.map((item, i) => {
           return (
-            <li onClick={() => setIsNavOpen(false)} className='text-3xl mb-5'>
-              <a className=' w-full  block h-full' href={item.link}>{item.text}</a>
+            <li
+              key={i}
+              onClick={() => setIsNavOpen(false)}
+              className='text-3xl mb-5'
+            >
+              <a className=' w-full  block h-full' href={item.link}>
+                {item.text}
+              </a>
             </li>
           )
         })}

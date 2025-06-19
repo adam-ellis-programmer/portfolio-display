@@ -9,7 +9,7 @@ const Hero = ({ showcase }) => {
   return (
     <section className=''>
       {/* main wrap */}
-      <div className='  grid grid-cols-1 md:grid-cols-2  mx-width px-10  mb-20'>
+      <div className='  grid grid-cols-1 md:grid-cols-2  mx-width px-10  mb-10'>
         <div className=''>
           <div className=' flex justify-center'>
             <div className=' w-fit '>
@@ -21,7 +21,7 @@ const Hero = ({ showcase }) => {
               </div>
               {/*  */}
               <div className=' text-2xl  mt-5 leading-[2.4rem] text-end'>
-                <p className='tracking-[1em]'>& designer</p>
+                <p className='tracking-[0.8em]'>& designer</p>
                 <p className='tracking-[1rem] mr-5'>London</p>
               </div>
             </div>
