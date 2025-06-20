@@ -2,9 +2,11 @@ import React from 'react'
 
 // import img from '../assets/images/seo/google.png'
 
-const img =
+const google =
   'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/design%20logos%2Fgoogle.png?alt=media&token=cd4889cd-d0af-47bd-810a-38a04c31893b'
 
+const facebook =
+  'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ffacebook.png?alt=media&token=b617c58e-6845-4898-9218-6b486cfaeeea'
 const SearchAndSEO = () => {
   const searchAttributes = [
     'Search Ads',
@@ -14,9 +16,13 @@ const SearchAndSEO = () => {
     'App Ads',
     'Smart Campaigns',
   ]
+
+  //  ----------------------  add in face book advertising ----------------------
   return (
     <section id='advertising' className=' mt-10 px-5 md:px-0'>
-      <h3 className='text-4xl text-center my-10'>Advertising | Search | SEO</h3>
+      <h3 className='text-4xl text-center my-10'>
+        Digital Marketing | Search | SEO
+      </h3>
       <div className='max-w-[1200px] m-auto'>
         <div className='m-auto grid md:grid-cols-2'>
           <div></div>
@@ -29,7 +35,7 @@ const SearchAndSEO = () => {
           </p>
         </div>
 
-        <div className=' mt-10 grid grid-cols-2'>
+        <div className=' mt-10 grid md:grid-cols-3 gap-y-10 md:gap-y-0'>
           <ul>
             {searchAttributes.map((item, i) => {
               return (
@@ -42,7 +48,12 @@ const SearchAndSEO = () => {
           </ul>
           <div>
             <div className=' flex items-center justify-center h-full'>
-              <img className='w-40' src={img} alt='' />
+              <img className='w-40' src={google} alt='' />
+            </div>
+          </div>
+          <div className=''>
+            <div className=' flex items-center justify-center h-full'>
+              <img className='w-40' src={facebook} alt='' />
             </div>
           </div>
         </div>

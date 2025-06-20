@@ -11,7 +11,7 @@ const NavBar = () => {
     { text: 'Skills', link: '#skills' },
     { text: 'Show Case', link: '#showCase' },
     { text: 'Design', link: '#design' },
-    { text: 'Advertising', link: '#advertising' },
+    { text: 'Marketing', link: '#advertising' },
     { text: 'Contact', link: '#contact' },
   ]
 

@@ -62,7 +62,7 @@ const DesignSection = ({ designs }) => {
           </div>
 
           <div>
-            <ul className=' mt-20 grid grid-cols-2 md:grid-cols-3'>
+            <ul className=' mt-20 grid grid-cols-2 md:grid-cols-3 px-5 md:px-0'>
               {designTools.map((item, i) => {
                 return (
                   <li key={i} className='flex items-center'>
