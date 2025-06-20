@@ -15,6 +15,8 @@ const SearchAndSEO = () => {
     'Shopping Ads',
     'App Ads',
     'Smart Campaigns',
+    // 'facebook ads',
+    // 'facebook advertising'
   ]
 
   //  ----------------------  add in face book advertising ----------------------
