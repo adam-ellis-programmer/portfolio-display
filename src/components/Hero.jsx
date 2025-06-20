@@ -31,7 +31,7 @@ const Hero = ({ showcase }) => {
             <div className='flex md:hidden justify-start'>
               <HeroImg />
             </div>
-            <div className=' flex justify-center items-center mb-5 '>
+            <div className=' flex justify-center items-center mb-5  '>
               <i className='fa-solid fa-circle-info text-[1.5rem]'></i>
               <p className='text-2xlmy-5 text-2xl mx-3'>quick bio</p>
             </div>
@@ -71,8 +71,8 @@ const Hero = ({ showcase }) => {
                 <p className='text-2xl tracking-[0.9rem]'> demoing</p>
               </div>
               {/*  */}
-              <div className=' mt-10 flex justify-center'>
-                <p className='max-w-3/4 bg-[#6D84B0] shadow-2xl text-white  p-5 rounded-[0.4rem]  page-quote'>
+              <div className=' mt-10 flex justify-center '>
+                <p className='md:max-w-3/4 bg-[#6D84B0] shadow-2xl text-white  p-5 rounded-[0.4rem]  page-quote'>
                   Your work is going to fill a large part of your life, and the
                   only way to be truly satisfied is to do what you believe is
                   great work. And the only way to do great work is to love what
