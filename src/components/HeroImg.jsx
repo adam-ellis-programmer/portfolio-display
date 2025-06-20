@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../assets/images/profile-pic.png'
+import img from '../assets/images/profile-img.png'
 
 const HeroImg = () => {
   return (

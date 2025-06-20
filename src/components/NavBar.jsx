@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 
 import img from '../assets/logo.png'
+import DarkMode from './DarkMode'
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false)
@@ -48,6 +49,7 @@ const NavBar = () => {
               </li>
             )
           })}
+          <DarkMode />
         </ul>
       </div>
       {isNavOpen && <MobileNav setIsNavOpen={setIsNavOpen} links={links} />}
