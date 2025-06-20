@@ -3,7 +3,7 @@ import MobileNav from './MobileNav'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
-import img from '../assets/logo.png'
+import img from '../assets/signature.png'
 import DarkMode from './DarkMode'
 
 const NavBar = () => {
