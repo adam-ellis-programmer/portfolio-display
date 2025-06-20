@@ -9,14 +9,14 @@ const facebook =
   'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ffacebook.png?alt=media&token=b617c58e-6845-4898-9218-6b486cfaeeea'
 const SearchAndSEO = () => {
   const searchAttributes = [
-    'Search Ads',
-    'Display Ads',
-    'You Tube Ads',
-    'Shopping Ads',
-    'App Ads',
-    'Smart Campaigns',
-    // 'facebook ads',
-    // 'facebook advertising'
+    { text: 'Search Ads', icon: 'fa-google' },
+    { text: 'Display Ads', icon: 'fa-google' },
+    { text: 'You Tube Ads', icon: 'fa-google' },
+    { text: 'Shopping Ads', icon: 'fa-google' },
+    { text: 'App Ads', icon: 'fa-google' },
+    { text: 'Smart Campaigns', icon: 'fa-google' },
+    { text: 'Facebook ads', icon: 'fa-facebook' },
+    { text: 'Facebook campaigns', icon: 'fa-facebook' },
   ]
 
   //  ----------------------  add in face book advertising ----------------------
@@ -42,8 +42,13 @@ const SearchAndSEO = () => {
             {searchAttributes.map((item, i) => {
               return (
                 <li key={i} className='mb-2 items-center'>
-                  <i className='fa-brands fa-google text-2xl text-[#3862B0]'></i>
-                  <span className='ml-2 text-2xl text-[#3862B0]'> {item}</span>
+                  <i
+                    className={`fa-brands ${item.icon} text-2xl text-[#3862B0]`}
+                  ></i>
+                  <span className='ml-2 text-2xl text-[#3862B0]'>
+                    {' '}
+                    {item.text}
+                  </span>
                 </li>
               )
             })}
