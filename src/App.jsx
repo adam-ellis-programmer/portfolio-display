@@ -12,6 +12,7 @@ import Contact from './components/Contact'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
+
 function App() {
   const { data, loading, error } = useFirebaseData()
 
@@ -28,7 +29,7 @@ function App() {
   // prettier-ignore
   const [isDarkMode, setIsDarkMode] = useState(() => {
   if (typeof window !== 'undefined') {
-    // Variables declared here are only available in this block
+    // detects user's system theme
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
     // console.log('systemPrefersDark--->',systemPrefersDark)
     return systemPrefersDark
