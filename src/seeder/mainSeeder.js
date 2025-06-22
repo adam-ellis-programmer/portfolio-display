@@ -88,6 +88,9 @@ async function seedAll() {
     }
 
     console.log('\n🎉 All data seeded successfully!')
+
+    // ✅ EXIT SUCCESSFULLY
+    process.exit(0)
   } catch (error) {
     console.error('\n💥 Seeding failed:', error)
     process.exit(1)
@@ -104,6 +107,9 @@ async function clearAll() {
     await clearCollection(collections.designs)
 
     console.log('\n🎉 All collections cleared successfully!')
+
+    // ✅ EXIT SUCCESSFULLY
+    process.exit(0)
   } catch (error) {
     console.error('\n💥 Cleanup failed:', error)
     process.exit(1)
