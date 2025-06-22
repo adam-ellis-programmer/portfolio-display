@@ -1,27 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const DarkMode = () => {
-  // Initialize dark mode state from localStorage or default to false
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('darkTheme')
-      return savedTheme ? JSON.parse(savedTheme) : false
-    }
-    return false
-  })
-
-  // Apply theme to document on component mount and when isDarkMode changes
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-
-    // Save to localStorage
-    localStorage.setItem('darkTheme', JSON.stringify(isDarkMode))
-  }, [isDarkMode])
-
+const DarkMode = ({ isDarkMode, setIsDarkMode }) => {
   const handleClick = () => {
     console.log(
       'changing theme from',
@@ -33,7 +12,7 @@ const DarkMode = () => {
   }
 
   return (
-    <label  className='swap swap-rotate'>
+    <label className='swap swap-rotate'>
       {/* this hidden checkbox controls the state */}
       <input onClick={handleClick} type='checkbox' />
 

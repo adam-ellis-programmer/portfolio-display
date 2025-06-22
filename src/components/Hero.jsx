@@ -27,15 +27,15 @@ const Hero = ({ showcase }) => {
             </div>
           </div>
           {/*  */}
-          <div className='max-w-[600px] m-auto mt-10 text-justify '>
+          <div className='max-w-[600px] m-auto mt-10 text-justify shadow-[1px_2px_15px_rgba(0,0,0,0.1)]  p-5 md:p-10 rounded '>
             <div className='flex md:hidden justify-start'>
               <HeroImg />
             </div>
-            <div className=' flex justify-center items-center mb-5  '>
+            <div className=' flex justify-center items-center mb-5 '>
               <i className='fa-solid fa-circle-info text-[1.5rem]'></i>
               <p className='text-2xlmy-5 text-2xl mx-3'>quick bio</p>
             </div>
-            <p>
+            <p className=''>
               Adam is a seasoned technology professional with over ten years of
               design experience and more than five years of programming
               expertise. Throughout his career, he has developed a unique blend

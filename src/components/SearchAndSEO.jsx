@@ -7,7 +7,7 @@ const google =
 
 const facebook =
   'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ffacebook.png?alt=media&token=b617c58e-6845-4898-9218-6b486cfaeeea'
-const SearchAndSEO = () => {
+const SearchAndSEO = ({ isDarkMode }) => {
   const searchAttributes = [
     { text: 'Search Ads', icon: 'fa-google' },
     { text: 'Display Ads', icon: 'fa-google' },
@@ -43,10 +43,13 @@ const SearchAndSEO = () => {
               return (
                 <li key={i} className='mb-2 items-center'>
                   <i
-                    className={`fa-brands ${item.icon} text-2xl text-[#3862B0]`}
+                    className={`fa-brands ${item.icon} text-2xl ${isDarkMode ? 'text-white' : 'text-[#3862B0]'}`}
                   ></i>
-                  <span className='ml-2 text-2xl text-[#3862B0]'>
-                    {' '}
+                  <span
+                    className={`ml-2 text-2xl ${
+                      isDarkMode ? 'text-white' : 'text-[#3862B0]'
+                    }`}
+                  >
                     {item.text}
                   </span>
                 </li>

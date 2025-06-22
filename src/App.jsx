@@ -9,9 +9,32 @@ import SearchAndSEO from './components/SearchAndSEO'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
 import Contact from './components/Contact'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
 function App() {
   const { data, loading, error } = useFirebaseData()
+
+  // Initialize dark mode state from localStorage or default to false
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('darkTheme')
+      return savedTheme ? JSON.parse(savedTheme) : false
+    }
+    return false
+  })
+
+  // Apply theme to document on component mount and when isDarkMode changes
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+
+    // Save to localStorage
+    localStorage.setItem('darkTheme', JSON.stringify(isDarkMode))
+  }, [isDarkMode])
 
   if (loading) {
     return (
@@ -27,12 +50,12 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Hero showcase={data.showcase} />
       <SkillsAndTech techLogos={data.techLogos} />
       <ShowCase showcase={data.showcase} />
       <DesignSection designs={data.designs} />
-      <SearchAndSEO />
+      <SearchAndSEO isDarkMode={isDarkMode} />
       <Contact />
       <Footer />
       <BackToTop />

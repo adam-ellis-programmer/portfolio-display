@@ -4,9 +4,10 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 
 import img from '../assets/logo-signature-1.png'
+import imgWhite from '../assets/signature-white.png'
 import DarkMode from './DarkMode'
 
-const NavBar = () => {
+const NavBar = ({ isDarkMode, setIsDarkMode }) => {
   const [isNavOpen, setIsNavOpen] = useState(false)
   const links = [
     { text: 'Skills', link: '#skills' },
@@ -30,15 +31,22 @@ const NavBar = () => {
   return (
     <nav className=' h-25 shadow-[1px_2px_11px_rgba(0,0,0,0.1)] md:shadow-none mb-10 md:mb-0 '>
       <div className='mx-width  mx-auto  flex items-center h-full  justify-between px-10'>
-        <img className='w-40' src={img} alt='' />
-        <button
-          className='block lg:hidden'
-          onClick={() => {
-            setIsNavOpen(!isNavOpen)
-          }}
-        >
-          <i className='fa-solid fa-bars-staggered text-3xl cursor-pointer'></i>
-        </button>
+        {isDarkMode ? (
+          <img className='w-40' src={imgWhite} alt='' />
+        ) : (
+          <img className='w-40' src={img} alt='' />
+        )}
+        <div className=' flex w-25 justify-between'>
+          <DarkMode isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+          <button
+            className='block lg:hidden'
+            onClick={() => {
+              setIsNavOpen(!isNavOpen)
+            }}
+          >
+            <i className='fa-solid fa-bars-staggered text-3xl cursor-pointer'></i>
+          </button>
+        </div>
         <ul className='ml-5  hidden lg:flex'>
           {links.map((item, i) => {
             return (
@@ -49,7 +57,7 @@ const NavBar = () => {
               </li>
             )
           })}
-          <DarkMode />
+          <DarkMode isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         </ul>
       </div>
       {isNavOpen && <MobileNav setIsNavOpen={setIsNavOpen} links={links} />}
