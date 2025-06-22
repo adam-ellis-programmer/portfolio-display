@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const DarkMode = ({ isDarkMode, setIsDarkMode }) => {
+const DarkMode = ({ isDarkMode, setIsDarkMode, mobile }) => {
   const handleClick = () => {
     console.log(
       'changing theme from',
@@ -12,7 +12,7 @@ const DarkMode = ({ isDarkMode, setIsDarkMode }) => {
   }
 
   return (
-    <label className='swap swap-rotate'>
+    <label className={`swap swap-rotate ${mobile && 'lg:hidden'}`}>
       {/* this hidden checkbox controls the state */}
       <input onClick={handleClick} type='checkbox' />
 

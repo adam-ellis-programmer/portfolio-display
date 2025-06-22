@@ -54,7 +54,7 @@ function App() {
       <Hero showcase={data.showcase} />
       <SkillsAndTech techLogos={data.techLogos} />
       <ShowCase showcase={data.showcase} />
-      <DesignSection designs={data.designs} />
+      <DesignSection designs={data.designs} isDarkMode={isDarkMode} />
       <SearchAndSEO isDarkMode={isDarkMode} />
       <Contact />
       <Footer />

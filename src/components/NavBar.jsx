@@ -37,7 +37,7 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
           <img className='w-40' src={img} alt='' />
         )}
         <div className=' flex w-25 justify-between'>
-          <DarkMode isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+          <DarkMode mobile isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
           <button
             className='block lg:hidden'
             onClick={() => {

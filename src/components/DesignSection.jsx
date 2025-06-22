@@ -8,7 +8,7 @@ import logo5 from '../assets/images/design logos/5.png'
 import logo6 from '../assets/images/design logos/6.png'
 import logo7 from '../assets/images/design logos/7.png'
 // prettier-ignore
-const DesignSection = ({ designs }) => {
+const DesignSection = ({ designs,  isDarkMode}) => {
   const designTools = [
     'photo shop',
     'illustrator',
@@ -66,7 +66,7 @@ const DesignSection = ({ designs }) => {
               {designTools.map((item, i) => {
                 return (
                   <li key={i} className='flex items-center'>
-                    <i className='fa-solid fa-square-check text-4xl text-[#D90404]'></i>
+                    <i className={`fa-solid fa-square-check text-4xl ${isDarkMode ? 'text-[#b2a6a6]': 'text-[#D90404]'}`}></i>
                     <span className='ml-5 text-2xl'>{item}</span>
                   </li>
                 )
