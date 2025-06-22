@@ -12,9 +12,25 @@ import Contact from './components/Contact'
 import { useState } from 'react'
 import { useEffect } from 'react'
 
+import { analytics } from './firebase/config' // your config file
+import { logEvent } from 'firebase/analytics'
 
 function App() {
   const { data, loading, error } = useFirebaseData()
+
+  useEffect(() => {
+    // Initialize analytics tracking
+    if (analytics) {
+      logEvent(analytics, 'app_start')
+
+      // Track page view
+      logEvent(analytics, 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href,
+        page_path: window.location.pathname,
+      })
+    }
+  }, [])
 
   // Initialize dark mode state from localStorage or default to false
   // Lazy useState for efficiency
@@ -48,8 +64,6 @@ function App() {
     // Save to localStorage
     localStorage.setItem('darkTheme', JSON.stringify(isDarkMode))
   }, [isDarkMode])
-
-  
 
   if (loading) {
     return (
