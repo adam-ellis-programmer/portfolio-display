@@ -60,7 +60,13 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
           <DarkMode isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         </ul>
       </div>
-      {isNavOpen && <MobileNav setIsNavOpen={setIsNavOpen} links={links} />}
+      {isNavOpen && (
+        <MobileNav
+          setIsNavOpen={setIsNavOpen}
+          isDarkMode={isDarkMode}
+          links={links}
+        />
+      )}
     </nav>
   )
 }

@@ -1,10 +1,10 @@
 import React from 'react'
 
-const MobileNav = ({ setIsNavOpen, links }) => {
+const MobileNav = ({ setIsNavOpen, links, isDarkMode }) => {
   return (
-    <aside className=' fixed top-0 bottom-0 w-full bg-white z-100 block lg:hidden p-10  overflow-scroll'>
+    <aside className={` fixed top-0 bottom-0 w-full ${isDarkMode ? 'bg-[#576276]' : 'bg-white'} z-100 block lg:hidden p-10  overflow-scroll`}>
       <div className='h-10 flex justify-end px-5'>
-        <button onClick={() => setIsNavOpen(false)}>
+        <button className='cursor-pointer' onClick={() => setIsNavOpen(false)}>
           <i className='text-5xl fa-solid fa-square-xmark'></i>
         </button>
       </div>
