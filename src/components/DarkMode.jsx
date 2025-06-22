@@ -17,6 +17,7 @@ const DarkMode = ({ isDarkMode, setIsDarkMode, mobile }) => {
       <input
         onClick={handleClick}
         type='checkbox'
+        // checkboxes start unchecked, but their visual state gets out of sync
         checked={isDarkMode}
         onChange={() => {}} // Prevents React warning about controlled input
       />
