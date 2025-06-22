@@ -1,9 +1,16 @@
 import React from 'react'
 import img from '../assets/images/profile-img.png'
+import imgWhite from '../assets/images/profile-img-white.png'
 
-const HeroImg = () => {
+const HeroImg = ({isDarkMode}) => {
   return (
-    <img className='w-90 md:w-130 ' src={img} alt='' />
+    <>
+      {isDarkMode ? (
+        <img className='w-90 md:w-130 ' src={imgWhite} alt='' />
+      ) : (
+        <img className='w-90 md:w-130 ' src={img} alt='' />
+      )}
+    </>
   )
 }
 

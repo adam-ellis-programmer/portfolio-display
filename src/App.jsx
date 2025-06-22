@@ -16,13 +16,25 @@ function App() {
   const { data, loading, error } = useFirebaseData()
 
   // Initialize dark mode state from localStorage or default to false
+  // Lazy useState for efficiency
+  // const [isDarkMode, setIsDarkMode] = useState(() => {
+  //   if (typeof window !== 'undefined') {
+  //     const savedTheme = localStorage.getItem('darkTheme')
+  //     return savedTheme ? JSON.parse(savedTheme) : false
+  //   }
+  //   return false
+  // })
+
+  // prettier-ignore
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('darkTheme')
-      return savedTheme ? JSON.parse(savedTheme) : false
-    }
-    return false
-  })
+  if (typeof window !== 'undefined') {
+    // Variables declared here are only available in this block
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+    // console.log('systemPrefersDark--->',systemPrefersDark)
+    return systemPrefersDark
+  }
+  return false
+})
 
   // Apply theme to document on component mount and when isDarkMode changes
   useEffect(() => {
@@ -35,6 +47,8 @@ function App() {
     // Save to localStorage
     localStorage.setItem('darkTheme', JSON.stringify(isDarkMode))
   }, [isDarkMode])
+
+  
 
   if (loading) {
     return (
@@ -51,7 +65,7 @@ function App() {
   return (
     <>
       <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Hero showcase={data.showcase} />
+      <Hero showcase={data.showcase} isDarkMode={isDarkMode} />
       <SkillsAndTech techLogos={data.techLogos} />
       <ShowCase showcase={data.showcase} />
       <DesignSection designs={data.designs} isDarkMode={isDarkMode} />

@@ -10,7 +10,7 @@ export const showcaseArr = [
     order: 1,
   },
   {
-    lineOne: 'PYTHON - REACT',
+    lineOne: 'PYTHON - REACT - AWS',
     lineTwo: 'e commerce shop',
     fullStack: true,
     link: 'https://easy-shop.biz/',
