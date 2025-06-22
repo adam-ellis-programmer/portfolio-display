@@ -27,7 +27,7 @@ const Hero = ({ showcase }) => {
             </div>
           </div>
           {/*  */}
-          <div className='max-w-[600px] m-auto mt-10 text-justify shadow-[1px_2px_15px_rgba(0,0,0,0.1)]  p-5 md:p-10 rounded '>
+          <div className='max-w-[600px] m-auto mt-10 text-justify md:shadow-[1px_2px_15px_rgba(0,0,0,0.1)]  p-0 md:p-10 rounded '>
             <div className='flex md:hidden justify-start'>
               <HeroImg />
             </div>
