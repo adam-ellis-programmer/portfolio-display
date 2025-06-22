@@ -118,6 +118,8 @@ async function clearAll() {
 
 // CLI functionality
 const command = process.argv[2]
+console.log(process.argv)
+
 
 switch (command) {
   case 'seed':

@@ -14,7 +14,12 @@ const DarkMode = ({ isDarkMode, setIsDarkMode, mobile }) => {
   return (
     <label className={`swap swap-rotate ${mobile && 'lg:hidden'}`}>
       {/* this hidden checkbox controls the state */}
-      <input onClick={handleClick} type='checkbox' />
+      <input
+        onClick={handleClick}
+        type='checkbox'
+        checked={isDarkMode}
+        onChange={() => {}} // Prevents React warning about controlled input
+      />
 
       {/* sun icon */}
       <svg
