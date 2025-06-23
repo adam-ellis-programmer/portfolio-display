@@ -1,12 +1,49 @@
+import { useEffect, useRef } from 'react'
+
 const ShowCase = ({ showcase }) => {
+  // Create a ref to target the section element
+  const sectionRef = useRef(null)
+
   // Sort the showcase data by the order property
   const sortedShowcase = [...showcase].sort((a, b) => a.order - b.order)
 
-  // console.log('Original showcase:', showcase)
-  // console.log('Sorted showcase:', sortedShowcase)
+  useEffect(() => {
+    // Create the intersection observer
+    // prettier-ignore
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // console.log('isIntersecting:', entry.isIntersecting)
+            // console.log('isVisible:', entry.isVisible) // May be undefined in older browsers
+            // console.log('in view')
+          }
+        })
+      },{
+        // Options for the observer
+        threshold: 0.1, 
+        rootMargin: '0px', // No margin around the root
+      }
+    )
+
+    // Start observing the section
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
+    // Cleanup function to disconnect observer
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current)
+      }
+    }
+  }, []) // Empty dependency array - only run once
 
   return (
-    <section id='showCase' className='min-h-screen'>
+    <section
+      id='showCase'
+      className='min-h-screen'
+      ref={sectionRef} // Attach the ref here
+    >
       <h3 className='text-4xl text-center my-5'>Showcased Projects</h3>
       <div className='px-5 md:px-0 max-w-[1200px] m-auto grid md:grid-cols-2 my-5'>
         <div></div>

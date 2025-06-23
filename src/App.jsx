@@ -28,6 +28,7 @@ function App() {
         page_title: document.title,
         page_location: window.location.href,
         page_path: window.location.pathname,
+        section_name: 'showcase', 
       })
     }
   }, [])
