@@ -26,7 +26,7 @@ const SocialLinks = () => {
       </a>
       <a className='relative' href='https://github.com/adam-ellis-programmer?tab=repositories'>
         <i className='fa-brands fa-github mx-5'></i>
-        {repoCount && <span className='text-sm ml-2'>({repoCount} repos)</span>}
+        {/* {repoCount && <span className='text-sm ml-2'>({repoCount} repos)</span>} */}
         {/* {repoCount && <span className='p-3 absolute bg-[#6D84B0] top-0 right-3 text-sm text-white w-6 h-6 rounded-full flex items-center justify-center'>{repoCount}</span>} */}
       </a>
     </div>
