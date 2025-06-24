@@ -35,24 +35,24 @@ function App() {
 
   // Initialize dark mode state from localStorage or default to false
   // Lazy useState for efficiency
-  // const [isDarkMode, setIsDarkMode] = useState(() => {
-  //   if (typeof window !== 'undefined') {
-  //     const savedTheme = localStorage.getItem('darkTheme')
-  //     return savedTheme ? JSON.parse(savedTheme) : false
-  //   }
-  //   return false
-  // })
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('darkTheme')
+      return savedTheme ? JSON.parse(savedTheme) : false
+    }
+    return false
+  })
 
   // prettier-ignore
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-  if (typeof window !== 'undefined') {
-    // detects user's system theme
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    // console.log('systemPrefersDark--->',systemPrefersDark)
-    return systemPrefersDark
-  }
-  return false
-})
+//   const [isDarkMode, setIsDarkMode] = useState(() => {
+//   if (typeof window !== 'undefined') {
+//     // detects user's system theme
+//     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+//     // console.log('systemPrefersDark--->',systemPrefersDark)
+//     return systemPrefersDark
+//   }
+//   return false
+// })
 
   // Apply theme to document on component mount and when isDarkMode changes
   useEffect(() => {
