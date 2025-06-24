@@ -8,7 +8,7 @@ const Contact = () => {
       <div className=' grid md:grid-cols-2 gap-2 md:gap-0'>
         <div className='flex md:justify-center items-center'>
           <i className='fa-solid fa-envelope text-5xl mr-5'></i>{' '}
-          <span className='text-2xl'>hello@adamellis.org</span>
+          <span className='text-2xl'>hello@adamellis.online</span>
         </div>
         <div className='flex md:justify-center items-center'>
           <i className='fa-solid fa-square-phone text-5xl mr-5'></i>

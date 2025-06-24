@@ -99,4 +99,9 @@ export const techlogoData = [
     name: 'AWS',
     logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/design%20logos%2Faws.png?alt=media&token=701b3c54-c677-4083-9976-fd5fe8991407',
   },
+  {
+    order: 21,
+    name: 'Socket.io',
+    logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2Fsocket.io.png?alt=media&token=4b789708-437f-4754-9a6f-984187f4f650',
+  },
 ]
