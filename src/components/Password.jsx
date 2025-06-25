@@ -86,9 +86,10 @@ const Password = () => {
           type='password'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className='input-border w-full text-2xl outline-rose-400 mb-3'
-          placeholder='Enter Password'
+          className='input-border w-full text-2xl outline-rose-400 mb-3 rounded'
+          placeholder='Enter Password To Download'
           disabled={isLoading}
+          autoComplete='true'
         />
 
         <button
