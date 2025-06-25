@@ -1,10 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { storage, db } from '../firebase/config'
 import { ref, getDownloadURL } from 'firebase/storage'
 import { doc, getDoc } from 'firebase/firestore'
 import bcrypt from 'bcryptjs'
+import { useEffect } from 'react'
 
 const Password = () => {
+  const refEl = useRef()
+  useEffect(() => {
+    const ref = refEl.current
+    ref.focus()
+    return () => {}
+  }, [])
   const [password, setPassword] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')
@@ -80,7 +87,7 @@ const Password = () => {
   }
 
   return (
-    <div className='mt-5'>
+    <div ref={refEl} tabIndex={-1} className='mt-5'>
       <form onSubmit={handleSubmit}>
         <input
           type='password'

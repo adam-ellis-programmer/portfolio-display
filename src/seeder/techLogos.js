@@ -106,7 +106,12 @@ export const techlogoData = [
   },
   {
     order: 22,
-    name: 'git / github',
+    name: 'Git / Git Hub',
     logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2Fgit.png?alt=media&token=d80e753c-a407-4f5b-96bc-8f9342e0dc09',
+  },
+  {
+    order: 23,
+    name: 'Cloudinary',
+    logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2Fcloudinary.png?alt=media&token=116520b1-246d-4ec1-904e-c3edb3573716',
   },
 ]
