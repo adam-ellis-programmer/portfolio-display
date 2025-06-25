@@ -97,7 +97,10 @@ const Password = () => {
           disabled={isLoading || !password.trim()}
           className='w-full bg-rose-600 text-white py-2 px-4 rounded hover:bg-rose-700 disabled:opacity-50 disabled:cursor-not-allowed'
         >
-          {isLoading ? 'Verifying...' : 'Download CV'}
+          {isLoading ? 'Verifying...' : 'Download CV'}{' '}
+          <span>
+            <i className='fa-solid fa-cloud-arrow-down ml-2'></i>
+          </span>
         </button>
       </form>
 
