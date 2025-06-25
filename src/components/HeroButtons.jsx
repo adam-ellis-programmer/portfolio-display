@@ -61,16 +61,16 @@ const HeroButtons = ({ showcase }) => {
       {/* password element */}
       {showPassword && <Password />}
       {/*  */}
-      <div className='flex justify-center mt-5 '>
+      <div className=' grid md:grid-cols-3 mt-5 gap-1'>
         <button
           onClick={handleContactClick}
-          className='btn btn-outline border-[#6D84B0] text-[#6D84B0] mx-5'
+          className='h-10 w-full border border-[#6D84B0] text-[#6D84B0] rounded cursor-pointer '
         >
           Contact Me
         </button>
         <button
           onClick={handleRandomClick}
-          className='btn btn-soft bg-[#6D84B0] text-white mx-5'
+          className='h-10 w-full bg-[#6D84B0] text-white rounded cursor-pointer'
         >
           Random Project
         </button>

@@ -6,7 +6,7 @@ const CvBtn = ({ setShowPassword, showPassword }) => {
   return (
     <button
       onClick={() => setShowPassword(!showPassword)}
-      className='border bg-rose-400 border-none text-white w-35 cursor-pointer rounded disabled:opacity-50 disabled:cursor-not-allowed'
+      className='h-10 w-full  bg-rose-400 border-none text-white cursor-pointer rounded disabled:opacity-50 disabled:cursor-not-allowed'
     >
       {showPassword ? 'close' : 'My CV'}
     </button>
