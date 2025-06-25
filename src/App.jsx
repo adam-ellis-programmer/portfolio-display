@@ -14,6 +14,7 @@ import { useEffect } from 'react'
 
 import { analytics } from './firebase/config' // your config file
 import { logEvent } from 'firebase/analytics'
+import PasswordSetup from './password setup/PasswordSetup'
 
 function App() {
   const { data, loading, error } = useFirebaseData()
@@ -28,7 +29,7 @@ function App() {
         page_title: document.title,
         page_location: window.location.href,
         page_path: window.location.pathname,
-        section_name: 'showcase', 
+        section_name: 'showcase',
       })
     }
   }, [])
@@ -44,15 +45,15 @@ function App() {
   })
 
   // prettier-ignore
-//   const [isDarkMode, setIsDarkMode] = useState(() => {
-//   if (typeof window !== 'undefined') {
-//     // detects user's system theme
-//     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-//     // console.log('systemPrefersDark--->',systemPrefersDark)
-//     return systemPrefersDark
-//   }
-//   return false
-// })
+  //   const [isDarkMode, setIsDarkMode] = useState(() => {
+  //   if (typeof window !== 'undefined') {
+  //     // detects user's system theme
+  //     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  //     // console.log('systemPrefersDark--->',systemPrefersDark)
+  //     return systemPrefersDark
+  //   }
+  //   return false
+  // })
 
   // Apply theme to document on component mount and when isDarkMode changes
   useEffect(() => {
@@ -80,6 +81,7 @@ function App() {
 
   return (
     <>
+      {/* <PasswordSetup /> */}
       <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Hero showcase={data.showcase} isDarkMode={isDarkMode} />
       <SkillsAndTech techLogos={data.techLogos} />

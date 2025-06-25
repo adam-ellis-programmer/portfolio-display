@@ -119,3 +119,8 @@ html {
 .main-nav-li:hover::after {
   width: 100%; /* Expand to full width on hover */
 }
+
+.input-border {
+  border: 0.1px solid;
+  padding: 0.4em;
+}

@@ -43,7 +43,9 @@ const SearchAndSEO = ({ isDarkMode }) => {
               return (
                 <li key={i} className='mb-2 items-center'>
                   <i
-                    className={`fa-brands ${item.icon} text-2xl ${isDarkMode ? 'text-white' : 'text-[#3862B0]'}`}
+                    className={`fa-brands ${item.icon} text-2xl ${
+                      isDarkMode ? 'text-white' : 'text-[#3862B0]'
+                    }`}
                   ></i>
                   <span
                     className={`ml-2 text-2xl ${

@@ -1,4 +1,8 @@
 import { useState } from 'react'
+import DownloadCVBtn from './DownloadCVBtn'
+import DownloadCVBtn2 from './DownloadCVBtn2'
+import CvBtn from './CvBtn'
+import Password from './Password'
 
 const handleContactClick = () => {
   const contactSection = document.getElementById('contact')
@@ -14,6 +18,7 @@ const handleContactClick = () => {
 }
 
 const HeroButtons = ({ showcase }) => {
+  const [showPassword, setShowPassword] = useState(false)
   // Track the last random index to avoid duplicates
   const [lastRandomIndex, setLastRandomIndex] = useState(-1)
 
@@ -52,20 +57,29 @@ const HeroButtons = ({ showcase }) => {
   }
 
   return (
-    <div className='flex justify-center mt-5 '>
-      <button
-        onClick={handleContactClick}
-        className='btn btn-outline border-[#6D84B0] text-[#6D84B0] mx-5'
-      >
-        Contact Me
-      </button>
-      <button
-        onClick={handleRandomClick}
-        className='btn btn-soft bg-[#6D84B0] text-white mx-5'
-      >
-        Random Project
-      </button>
-    </div>
+    <>
+      {/* password element */}
+      {showPassword && <Password />}
+      {/*  */}
+      <div className='flex justify-center mt-5 '>
+        <button
+          onClick={handleContactClick}
+          className='btn btn-outline border-[#6D84B0] text-[#6D84B0] mx-5'
+        >
+          Contact Me
+        </button>
+        <button
+          onClick={handleRandomClick}
+          className='btn btn-soft bg-[#6D84B0] text-white mx-5'
+        >
+          Random Project
+        </button>
+
+        <CvBtn setShowPassword={setShowPassword} showPassword={showPassword} />
+        {/* <DownloadCVBtn /> */}
+        {/* <DownloadCVBtn2 /> */}
+      </div>
+    </>
   )
 }
 
