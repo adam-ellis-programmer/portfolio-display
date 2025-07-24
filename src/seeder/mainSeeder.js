@@ -11,12 +11,15 @@ import {
 import { techlogoData } from './techLogos.js'
 import { showcaseArr } from './showCaseData.js'
 import { designData } from './designData.js'
+import { profileData } from './profileData.js'
+
 
 // Collection names
 const collections = {
   techLogos: 'techLogos',
   showcase: 'showcase',
   designs: 'designs',
+  profiles: 'profiles',
 }
 
 // Seed a single collection
@@ -85,6 +88,10 @@ async function seedAll() {
     // Seed design data
     if (designData && designData.length > 0) {
       await seedCollection(collections.designs, designData)
+    }
+    // Seed profile image data data
+    if (designData && designData.length > 0) {
+      await seedCollection(collections.profiles, profileData)
     }
 
     console.log('\n🎉 All data seeded successfully!')

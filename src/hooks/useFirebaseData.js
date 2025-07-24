@@ -8,6 +8,7 @@ export const useFirebaseData = () => {
     designs: [],
     showcase: [],
     techLogos: [],
+    profileImgs: [],
   })
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
@@ -18,12 +19,17 @@ export const useFirebaseData = () => {
         setLoading(true)
 
         // Fetch all collections in parallel
-        const [designsSnapshot, showcaseSnapshot, techLogosSnapshot] =
-          await Promise.all([
-            getDocs(collection(db, 'designs')),
-            getDocs(collection(db, 'showcase')),
-            getDocs(collection(db, 'techLogos')),
-          ])
+        const [
+          designsSnapshot,
+          showcaseSnapshot,
+          techLogosSnapshot,
+          profileSnapshot,
+        ] = await Promise.all([
+          getDocs(collection(db, 'designs')),
+          getDocs(collection(db, 'showcase')),
+          getDocs(collection(db, 'techLogos')),
+          getDocs(collection(db, 'profiles')),
+        ])
 
         // Process the data
         const designsData = designsSnapshot.docs.map((doc) => ({
@@ -42,11 +48,16 @@ export const useFirebaseData = () => {
           id: doc.id,
           ...doc.data(),
         }))
+        const profileData = profileSnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }))
 
         setData({
           designs: designsData,
           showcase: showcaseData,
           techLogos: techLogosData,
+          profileImgs: profileData,
         })
       } catch (err) {
         console.error('Error fetching data:', err)

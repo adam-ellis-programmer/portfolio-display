@@ -83,7 +83,11 @@ function App() {
     <>
       {/* <PasswordSetup /> */}
       <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Hero showcase={data.showcase} isDarkMode={isDarkMode} />
+      <Hero
+        showcase={data.showcase}
+        isDarkMode={isDarkMode}
+        profileImgs={data.profileImgs}
+      />
       <SkillsAndTech techLogos={data.techLogos} />
       <ShowCase showcase={data.showcase} />
       <DesignSection designs={data.designs} isDarkMode={isDarkMode} />

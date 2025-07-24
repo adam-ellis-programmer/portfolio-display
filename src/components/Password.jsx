@@ -12,6 +12,7 @@ const Password = () => {
     ref.focus()
     return () => {}
   }, [])
+
   const [password, setPassword] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState('')

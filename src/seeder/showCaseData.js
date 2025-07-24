@@ -1,13 +1,25 @@
 export const showcaseArr = [
   {
+    lineOne: 'MERN CHAT APP / SOCKET.IO',
+    lineTwo: 'full stack authenticaion chat app',
+    fullStack: true,
+    link: 'https://www.chatter-app.org/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2FNew%20chat%202.png?alt=media&token=7a135706-a0db-49ea-803a-5bab372c551e',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/chat-app-one-domain-socket',
+    show: true,
+    order: 1,
+  },
+  {
     lineOne: 'FIREBASE',
     lineTwo: 'property rental site',
     fullStack: true,
     link: 'https://www.smart-property.biz/',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fsmart.png?alt=media&token=431db1a8-b996-4525-8963-39769787a8ee',
-    gitLink: 'https://github.com/adam-ellis-programmer/smart-property-rentals-updated',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/smart-property-rentals-updated',
     show: true,
-    order: 1,
+    order: 2,
   },
   {
     lineOne: 'PYTHON - REACT - AWS',
@@ -15,9 +27,10 @@ export const showcaseArr = [
     fullStack: true,
     link: 'https://easy-shop.biz/',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Feasy-store.png?alt=media&token=452d74ee-9f57-4c00-aee8-c4644f5956fe',
-    gitLink: 'https://github.com/adam-ellis-programmer/django-shop-frontend-test',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/django-shop-frontend-test',
     show: true,
-    order: 2,
+    order: 3,
   },
   {
     lineOne: 'FIREBASE',
@@ -27,7 +40,7 @@ export const showcaseArr = [
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Feasy-data.png?alt=media&token=987d6bc0-edd6-4612-993d-11d9b333df88',
     gitLink: 'https://github.com/adam-ellis-programmer/firebase-crm-updated',
     show: true,
-    order: 3,
+    order: 4,
   },
   {
     lineOne: 'MERN',
@@ -37,7 +50,7 @@ export const showcaseArr = [
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fjungle.png?alt=media&token=9a22056c-41bd-4222-ad04-1441b1114f1f',
     gitLink: 'https://github.com/adam-ellis-programmer/jungle-store',
     show: true,
-    order: 4,
+    order: 5,
   },
   {
     lineOne: 'MERN',
@@ -45,9 +58,10 @@ export const showcaseArr = [
     fullStack: true,
     link: 'https://www.thetravel.blog/',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fcms-blog.png?alt=media&token=b3a80260-d8db-4843-a1cf-d9559816dfc6',
-    gitLink: 'https://github.com/adam-ellis-programmer/content-managment-system',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/content-managment-system',
     show: true,
-    order: 5,
+    order: 6,
   },
   {
     lineOne: 'VANILLA JAVASCRIPT',
@@ -57,7 +71,7 @@ export const showcaseArr = [
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fvanilla-shop.png?alt=media&token=a55f7495-2524-45a1-8352-9db207646a71',
     gitLink: 'https://github.com/adam-ellis-programmer/vanilla-js-shop-updated',
     show: true,
-    order: 6,
+    order: 7,
   },
   {
     lineOne: 'FIREBASE',
@@ -65,9 +79,10 @@ export const showcaseArr = [
     fullStack: true,
     link: 'https://firebase-admin-pannel-updated.vercel.app/',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ffirebase-admin.png?alt=media&token=7f97794f-d00c-4ac9-80f5-4da8f6bfeb8a',
-    gitLink: 'https://github.com/adam-ellis-programmer/firebase-admin-pannel-updated',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/firebase-admin-pannel-updated',
     show: true,
-    order: 7,
+    order: 8,
   },
   {
     lineOne: 'VANILLA JAVASCRIPT',
@@ -77,7 +92,7 @@ export const showcaseArr = [
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ftravel-landing-page.png?alt=media&token=05eada7f-d017-4356-bde4-ab6b4de484e0',
     gitLink: 'https://github.com/adam-ellis-programmer/travel-blaze-updated',
     show: true,
-    order: 8,
+    order: 9,
   },
   {
     lineOne: 'REACT FRONTEND',
@@ -85,9 +100,10 @@ export const showcaseArr = [
     fullStack: false,
     link: 'https://comfy-store-course-react-router-6-4.vercel.app/',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fcomfy-project.png?alt=media&token=9fd95778-be74-4efc-be4d-bb0fe18a57e9',
-    gitLink: 'https://github.com/adam-ellis-programmer/Comfy-Store---course-React-Router-6.4-RTK',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/Comfy-Store---course-React-Router-6.4-RTK',
     show: true,
-    order: 9,
+    order: 10,
   },
   {
     lineOne: 'MERN',
@@ -95,8 +111,9 @@ export const showcaseArr = [
     fullStack: true,
     link: 'https://jobify-frontend-olive.vercel.app/',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fjobify.png?alt=media&token=b85881e6-6f45-4a40-9fa4-018888dd7a6a',
-    gitLink: 'https://github.com/adam-ellis-programmer/jobify--course--split-server-frontend',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/jobify--course--split-server-frontend',
     show: true,
-    order: 10,
+    order: 11,
   },
 ]

@@ -1,14 +1,7 @@
 import React from 'react'
+import LazyImage from './LazyImage'
 
-import logo1 from '../assets/images/design logos/1.png'
-import logo2 from '../assets/images/design logos/2.png'
-import logo3 from '../assets/images/design logos/3.png'
-import logo4 from '../assets/images/design logos/4.png'
-import logo5 from '../assets/images/design logos/5.png'
-import logo6 from '../assets/images/design logos/6.png'
-import logo7 from '../assets/images/design logos/7.png'
-// prettier-ignore
-const DesignSection = ({ designs,  isDarkMode}) => {
+const DesignSection = ({ designs, isDarkMode }) => {
   const designTools = [
     'photo shop',
     'illustrator',
@@ -19,6 +12,7 @@ const DesignSection = ({ designs,  isDarkMode}) => {
     'in design',
     'apple motion',
   ]
+
   return (
     <section id='design' className='mt-10'>
       <div className='max-w-[1300px] m-auto'>
@@ -43,18 +37,35 @@ const DesignSection = ({ designs,  isDarkMode}) => {
           </p>
         </div>
 
-        <div className=' mt-18'>
-          <div className='grid grid-cols-2 md:grid-cols-7 gap-6 '>
+        <div className='mt-18'>
+          <div className='grid grid-cols-2 md:grid-cols-7 gap-6'>
             {designs.map((item, i) => {
               return (
                 <div
                   key={i}
                   className='shadow-2xl p-2 flex justify-center rounded-2xl hover'
                 >
-                  <img
-                    className='w-30 h-30 object-contain'
+                  <LazyImage
                     src={item.img}
-                    alt=''
+                    alt={`Design software logo ${i + 1}`}
+                    className='w-30 h-30 object-contain'
+                    threshold={0.2}
+                    rootMargin='100px'
+                    placeholder={
+                      <div className='w-30 h-30 bg-gray-200 dark:bg-gray-700 animate-pulse rounded flex items-center justify-center'>
+                        <svg
+                          className='w-8 h-8 text-gray-400'
+                          fill='currentColor'
+                          viewBox='0 0 20 20'
+                        >
+                          <path
+                            fillRule='evenodd'
+                            d='M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z'
+                            clipRule='evenodd'
+                          />
+                        </svg>
+                      </div>
+                    }
                   />
                 </div>
               )
@@ -62,11 +73,15 @@ const DesignSection = ({ designs,  isDarkMode}) => {
           </div>
 
           <div>
-            <ul className=' mt-20 grid  md:grid-cols-3 px-5 md:px-0'>
+            <ul className='mt-20 grid md:grid-cols-3 px-5 md:px-0'>
               {designTools.map((item, i) => {
                 return (
                   <li key={i} className='flex items-center'>
-                    <i className={`fa-solid fa-square-check text-4xl ${isDarkMode ? 'text-[#b2a6a6]': 'text-[#D90404]'}`}></i>
+                    <i
+                      className={`fa-solid fa-square-check text-4xl ${
+                        isDarkMode ? 'text-[#b2a6a6]' : 'text-[#D90404]'
+                      }`}
+                    ></i>
                     <span className='ml-5 text-2xl'>{item}</span>
                   </li>
                 )
@@ -74,7 +89,6 @@ const DesignSection = ({ designs,  isDarkMode}) => {
             </ul>
           </div>
         </div>
-        {/* end of div */}
       </div>
     </section>
   )

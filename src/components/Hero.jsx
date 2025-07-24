@@ -3,7 +3,8 @@ import SocialLinks from './SocialLinks'
 import HeroImg from './HeroImg'
 
 const name = 'designer'
-const Hero = ({ showcase,isDarkMode }) => {
+const Hero = ({ showcase, isDarkMode, profileImgs }) => {
+  console.log(profileImgs)
   //h-[calc(100vh-80px)]
   //min-h-[calc(100vh-80px)]
   return (
@@ -29,13 +30,13 @@ const Hero = ({ showcase,isDarkMode }) => {
           {/*  */}
           <div className='max-w-[600px] m-auto mt-10 text-justify md:shadow-[1px_2px_15px_rgba(0,0,0,0.1)]  p-0 md:p-10 rounded '>
             <div className='flex md:hidden justify-start'>
-              <HeroImg  isDarkMode={isDarkMode}/>
+              <HeroImg isDarkMode={isDarkMode} />
             </div>
             <div className=' flex justify-center items-center mb-5 '>
               <i className='fa-solid fa-circle-info text-[1.5rem]'></i>
               <p className='text-2xlmy-5 text-2xl mx-3'>quick bio</p>
             </div>
-            <p className=''> 
+            <p className=''>
               Adam is a seasoned technology professional with over ten years of
               design experience and more than five years of programming
               expertise. Throughout his career, he has developed a unique blend
@@ -62,7 +63,7 @@ const Hero = ({ showcase,isDarkMode }) => {
           <div className=''>
             {/* <p className='text-center text-6xl absolute'>digital design and production!</p> */}
             <div className=' hidden md:flex justify-start'>
-              <HeroImg isDarkMode={isDarkMode} />
+              <HeroImg isDarkMode={isDarkMode} profileImgs={profileImgs} />
             </div>
             <div className=' mt-5'>
               <div className='max-w-[400px] mx-auto  text-end'>
