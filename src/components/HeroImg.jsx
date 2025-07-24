@@ -42,7 +42,7 @@ const HeroImg = ({ isDarkMode, profileImgs }) => {
       // Critical: Load immediately, don't lazy load
       loading='eager'
       // Add priority hint for better loading
-      fetchpriority='high'
+      fetchPriority='high'
       // Prevent layout shift while loading
       style={{
         minHeight: '200px', // Adjust based on your actual image dimensions

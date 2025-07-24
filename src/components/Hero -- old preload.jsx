@@ -1,44 +1,32 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import HeroButtons from './HeroButtons'
 import SocialLinks from './SocialLinks'
 import HeroImg from './HeroImg'
 
 const Hero = ({ showcase, isDarkMode, profileImgs }) => {
-  const [preloadComplete, setPreloadComplete] = useState(false)
-
+  // Preload critical hero images as soon as component mounts
   useEffect(() => {
     if (profileImgs && profileImgs.length > 0) {
-      let completedImages = 0
-      const totalImages = profileImgs.length
-
-      const checkAllLoaded = () => {
-        completedImages++
-        if (completedImages === totalImages) {
-          setPreloadComplete(true)
-        }
-      }
-
-      // Use link preload method but wait for completion
       profileImgs.forEach((img) => {
         const link = document.createElement('link')
         link.rel = 'preload'
         link.as = 'image'
         link.href = img.url
-        // Don't add crossOrigin
-
-        // Listen for load completion
-        link.onload = checkAllLoaded
-        link.onerror = () => {
-          console.warn(`Failed to preload: ${img.url}`)
-          checkAllLoaded() // Still count as "complete" to avoid hanging
-        }
-
+        link.crossOrigin = 'anonymous'
         document.head.appendChild(link)
       })
-    } else {
-      setPreloadComplete(true)
     }
   }, [profileImgs])
+
+  // useEffect(() => {
+  //   if (profileImgs) {
+  //     profileImgs.forEach((img) => {
+  //       const preloadImg = new Image()
+  //       preloadImg.src = img.url
+  //       // Browser caches the image for later use
+  //     })
+  //   }
+  // }, [profileImgs])
 
   return (
     <section className=''>
@@ -48,6 +36,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
           <div className='flex justify-center'>
             <div className='w-fit'>
               <div className=''>
+                {/* Add semantic markup for better SEO */}
                 <h1 className='tracking-widest clamp-hero-p'>Adam Ellis</h1>
                 <h2 className='text-6xl tracking-[0.4rem] clamp-hero-p-1 mt-1'>
                   programmer
@@ -62,20 +51,9 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
           </div>
 
           <div className='max-w-[600px] m-auto mt-10 text-justify md:shadow-[1px_2px_15px_rgba(0,0,0,0.1)] p-0 md:p-10 rounded'>
-            {/* Mobile hero image - wait for preload */}
-            <div className='flex md:hidden justify-start min-h-[312.88px]'>
-              {preloadComplete ? (
-                <HeroImg isDarkMode={isDarkMode} profileImgs={profileImgs} />
-              ) : (
-                <div className='w-90 min-h-[200px] bg-gray-200 dark:bg-gray-700 animate-pulse rounded flex items-center justify-center'>
-                  <div className='flex flex-col items-center'>
-                    <div className='w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-2'></div>
-                    <span className='text-gray-500 text-sm'>
-                      Loading image...
-                    </span>
-                  </div>
-                </div>
-              )}
+            {/* Mobile hero image - load eagerly */}
+            <div className='flex md:hidden justify-start'>
+              <HeroImg isDarkMode={isDarkMode} profileImgs={profileImgs} />
             </div>
 
             <div className='flex justify-center items-center mb-5'>
@@ -86,6 +64,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
               <h3 className='text-2xl mx-3'>quick bio</h3>
             </div>
 
+            {/* Add semantic markup for better accessibility */}
             <section aria-label='Professional biography'>
               <p>
                 Adam is a seasoned technology professional with over ten years
@@ -111,20 +90,9 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
         {/* Desktop hero image section */}
         <div className='flex justify-center'>
           <div className=''>
-            {/* Desktop hero image - wait for preload */}
-            <div className='hidden md:flex justify-start min-h-[451.93px]'>
-              {preloadComplete ? (
-                <HeroImg isDarkMode={isDarkMode} profileImgs={profileImgs} />
-              ) : (
-                <div className='w-130 h-[419.93px] bg-gray-200 dark:bg-gray-700 animate-pulse rounded flex items-center justify-center'>
-                  <div className='flex flex-col items-center'>
-                    <div className='w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-3'></div>
-                    <span className='text-gray-500'>
-                      Loading profile image...
-                    </span>
-                  </div>
-                </div>
-              )}
+            {/* Desktop hero image - load eagerly */}
+            <div className='hidden md:flex justify-start  min-h-[419.93px]'>
+              <HeroImg isDarkMode={isDarkMode} profileImgs={profileImgs} />
             </div>
 
             <div className='mt-5'>
