@@ -116,7 +116,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
               {preloadComplete ? (
                 <HeroImg isDarkMode={isDarkMode} profileImgs={profileImgs} />
               ) : (
-                <div className='w-130 h-[419.93px] bg-gray-200 dark:bg-gray-700 animate-pulse rounded flex items-center justify-center'>
+                <div className='w-130 min-h-[451.93px] bg-gray-200 dark:bg-gray-700 animate-pulse rounded flex items-center justify-center'>
                   <div className='flex flex-col items-center'>
                     <div className='w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-3'></div>
                     <span className='text-gray-500'>
