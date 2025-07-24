@@ -29,7 +29,10 @@ const ShowCase = ({ showcase }) => {
       <div className='grid md:grid-cols-2 gap-5 max-w-[1400px] mx-auto'>
         {sortedShowcase.map((item, i) => {
           return (
-            <div key={item.id || i} className='rounded-[0.6rem] relative hover'>
+            <div
+              key={item.id || i}
+              className='rounded-[0.6rem] relative hover '
+            >
               <a href={item.link}>
                 {item.fullStack && (
                   <div className='absolute top-3 z-10 flex justify-end w-full px-5'>

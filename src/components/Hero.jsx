@@ -81,7 +81,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
         <div className='flex justify-center'>
           <div className=''>
             {/* Desktop hero image - load eagerly */}
-            <div className='hidden md:flex justify-start'>
+            <div className='hidden md:flex justify-start  min-h-[419.93px]'>
               <HeroImg isDarkMode={isDarkMode} profileImgs={profileImgs} />
             </div>
 
