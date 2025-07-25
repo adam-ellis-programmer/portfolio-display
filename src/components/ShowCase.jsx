@@ -8,7 +8,50 @@ const ShowCase = ({ showcase }) => {
     <section id='showCase' className='min-h-screen'>
       <h3 className='text-4xl text-center my-5'>Showcased Projects</h3>
       <div className='px-5 md:px-0 max-w-[1200px] m-auto grid md:grid-cols-2 my-5'>
-        <div></div>
+        <div>
+          <ul className='grid grid-cols-2'>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>5 MERN</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>8 Full Stack</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>1 Python Django</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>4 Firebase</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>9 React</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>2 Socket.io</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>2 Laravel</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>4 PHP</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>4 + e commerce</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>+ Many More</span>
+            </li>
+          </ul>
+        </div>
         <p>
           Adam's showcased projects demonstrate his versatility and technical
           depth across various platforms and technologies. His portfolio
@@ -35,7 +78,7 @@ const ShowCase = ({ showcase }) => {
             >
               <a href={item.link}>
                 {item.fullStack && (
-                  <div className='absolute top-3 z-10 flex justify-end w-full px-5'>
+                  <div className='absolute top-3 z-20 flex justify-end w-full px-5'>
                     <div className='text-white bg-rose-500 p-1 rounded'>
                       <i className='fa-solid fa-layer-group'></i>
                       <span>full stack</span>
