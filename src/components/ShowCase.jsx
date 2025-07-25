@@ -8,11 +8,11 @@ const ShowCase = ({ showcase }) => {
     <section id='showCase' className='min-h-screen'>
       <h3 className='text-4xl text-center my-5'>Showcased Projects</h3>
       <div className='px-5 md:px-0 max-w-[1200px] m-auto grid md:grid-cols-2 my-5'>
-        <div>
+        <div className=' my-5 md:my-0'>
           <ul className='grid grid-cols-2'>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
-              <span className='ml-2 text-[1.2rem]'>5 MERN</span>
+              <span className='ml-2 text-[1.2rem]'>5 + MERN</span>
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
@@ -28,7 +28,7 @@ const ShowCase = ({ showcase }) => {
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
-              <span className='ml-2 text-[1.2rem]'>9 React</span>
+              <span className='ml-2 text-[1.2rem]'>9 + React</span>
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
@@ -85,14 +85,14 @@ const ShowCase = ({ showcase }) => {
                     </div>
                   </div>
                 )}
-                <div className='absolute top-0 bottom-0 left-0 right-0 bg-[#012840]/50 flex items-center justify-center rounded-[0.6rem] flex-col z-10'>
+                <div className='absolute top-0 bottom-0 left-0 right-0 bg-[#012840]/50 flex items-center justify-center md:rounded-[0.6rem] flex-col z-10'>
                   <h3 className='text-white text-3xl'>{item.lineOne}</h3>
                   <p className='text-2xl text-white'>{item.lineTwo}</p>
                 </div>
                 <LazyImage
                   src={item.url}
                   alt={`${item.lineOne} project screenshot`}
-                  className='w-full rounded-[0.6rem]'
+                  className='w-full md:rounded-[0.6rem]'
                   threshold={0.1}
                   rootMargin='100px'
                 />
@@ -108,14 +108,14 @@ const ShowCase = ({ showcase }) => {
         })}
 
         {/* Coming soon card */}
-        <div className='h-100 rounded-[0.6rem] relative hover'>
-          <div className='absolute top-0 bottom-0 left-0 right-0 bg-[#012840]/50 flex items-center justify-center rounded-[0.6rem] flex-col z-10'>
+        <div className='h-100 rounded-none md:rounded-[0.6rem] relative hover'>
+          <div className='absolute top-0 bottom-0 left-0 right-0 bg-[#012840]/50 flex items-center justify-center rounded-none md:rounded-[0.6rem] flex-col z-10'>
             <h3 className='text-white text-3xl capitalize'>
               new project coming soon!
             </h3>
             <p className='text-2xl text-white capitalize'>stay tuned...</p>
           </div>
-          <div className='w-full h-full bg-gray-200 dark:bg-gray-700 rounded-[0.6rem]'></div>
+          <div className='w-full h-full bg-gray-200 dark:bg-gray-700 rounded-none md:rounded-[0.6rem]'></div>
         </div>
       </div>
     </section>
