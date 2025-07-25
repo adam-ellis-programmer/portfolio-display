@@ -98,7 +98,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
                 communication, and interface aesthetics, while his programming
                 skills enable him to bring complex digital concepts to life.
                 Adam's dual expertise makes him particularly valuable in
-                creating cohesive, user-centered digital solutions that are both
+                creating cohesive, user-centered, data driven digital solutions that are both
                 visually compelling and technically robust.
               </p>
             </section>
