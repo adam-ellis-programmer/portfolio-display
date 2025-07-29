@@ -48,6 +48,10 @@ const ShowCase = ({ showcase }) => {
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
+              <span className='ml-2 text-[1.2rem]'>4 + Next JS</span>
+            </li>
+            <li className='flex items-center mb-1'>
+              <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
               <span className='ml-2 text-[1.2rem]'>+ Many More</span>
             </li>
           </ul>
