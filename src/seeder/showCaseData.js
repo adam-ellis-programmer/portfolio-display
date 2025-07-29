@@ -117,13 +117,13 @@ export const showcaseArr = [
     order: 11,
   },
   {
-    lineOne: 'NEXT JS ',
+    lineOne: 'NEXT JS PostgreSQL',
     lineTwo: 'social media infinate scroll ',
     fullStack: true,
     link: '/',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ffeed%20app.png?alt=media&token=90c97c34-b22c-4996-8cc5-74a9e1284a91',
     gitLink: '/',
     show: true,
-    order: 11,
+    order: 12,
   },
 ]
