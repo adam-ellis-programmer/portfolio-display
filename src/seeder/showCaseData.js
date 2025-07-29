@@ -117,7 +117,7 @@ export const showcaseArr = [
     order: 11,
   },
   {
-    lineOne: 'NEXT JS PostgreSQL',
+    lineOne: 'NEXT JS - PostgreSQL',
     lineTwo: 'social media infinate scroll ',
     fullStack: true,
     link: '/',
