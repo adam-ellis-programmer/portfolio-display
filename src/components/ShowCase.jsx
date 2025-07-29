@@ -92,7 +92,8 @@ const ShowCase = ({ showcase }) => {
                 <LazyImage
                   src={item.url}
                   alt={`${item.lineOne} project screenshot`}
-                  className='w-full md:rounded-[0.6rem]'
+                  // min height helps for lazy loading
+                  className='w-full md:rounded-[0.6rem] min-h-[300px]'
                   threshold={0.1}
                   rootMargin='100px'
                 />

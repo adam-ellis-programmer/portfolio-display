@@ -1,5 +1,5 @@
 // src/components/LazyImage.jsx
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef, useEffect, useMemo } from 'react'
 
 const LazyImage = ({
   src,
@@ -15,28 +15,32 @@ const LazyImage = ({
   const [hasError, setHasError] = useState(false)
   const imgRef = useRef()
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsInView(true)
-          observer.disconnect()
-        }
-      },
-      {
-        threshold,
-        rootMargin,
-      }
-    )
+  // Memoize options to prevent unnecessary re-renders
+  // prettier-ignore
+  const options = useMemo(() => ({
+      threshold,
+      rootMargin,
+    }),[threshold, rootMargin])
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setIsInView(true)
+        // console.log('entry--->', entry)
+        observer.disconnect()
+      }
+    }, options)
+
+    // Start observing the element
     if (imgRef.current) {
       observer.observe(imgRef.current)
     }
 
+    // Cleanup function --??
     return () => {
       observer.disconnect()
     }
-  }, [threshold, rootMargin])
+  }, [options]) // This is correct with useMemo
 
   const handleImageLoad = () => {
     setIsLoaded(true)
