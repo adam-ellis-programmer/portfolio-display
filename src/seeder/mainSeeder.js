@@ -13,7 +13,6 @@ import { showcaseArr } from './showCaseData.js'
 import { designData } from './designData.js'
 import { profileData } from './profileData.js'
 
-
 // Collection names
 const collections = {
   techLogos: 'techLogos',
@@ -35,6 +34,7 @@ async function seedCollection(collectionName, data, idField = 'id') {
         ...item,
         createdAt: new Date(),
         seeded: true,
+        order: index,
       })
     })
 
@@ -126,7 +126,6 @@ async function clearAll() {
 // CLI functionality
 const command = process.argv[2]
 console.log(process.argv)
-
 
 switch (command) {
   case 'seed':

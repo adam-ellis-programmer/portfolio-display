@@ -1,6 +1,7 @@
 export const showcaseArr = [
   {
-    lineOne: 'MERN CHAT APP / SOCKET.IO',
+    // lineOne: 'MERN CHAT APP / SOCKET.IO',
+    lineOne: 'MERN Chat App with Socket.io',
     lineTwo: 'full stack authenticaion chat app',
     fullStack: true,
     link: 'https://www.chatter-app.org/',
@@ -8,18 +9,29 @@ export const showcaseArr = [
     gitLink:
       'https://github.com/adam-ellis-programmer/chat-app-one-domain-socket',
     show: true,
-    order: 1,
+    // order: 1,
   },
   {
-    lineOne: 'FIREBASE',
-    lineTwo: 'property rental site',
+    lineOne: 'Django Python Social Feed App',
+    // lineOne: 'DJANGO SOCIAL FEED APP',
+    lineTwo: 'Smart Ad Targeting System',
     fullStack: true,
-    link: 'https://www.smart-property.biz/',
-    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fsmart.png?alt=media&token=431db1a8-b996-4525-8963-39769787a8ee',
-    gitLink:
-      'https://github.com/adam-ellis-programmer/smart-property-rentals-updated',
+    link: 'https://docker-django-fullstack-tailwind-server-render-production.up.railway.app',
+    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fdjango%20feed.png?alt=media&token=1ba1e74f-c680-478b-9578-b0fc7cb1099a',
+    gitLink: 'https://github.com/adam-ellis-programmer/docker-django-fullstack-tailwind-server-render',
     show: true,
-    order: 2,
+    // order: 12,
+  },
+  {
+    lineOne: 'NEXT JS - PostgreSQL',
+    lineTwo: 'social media infinate scroll ',
+    fullStack: true,
+    link: 'https://next-js-supabase-auth.vercel.app/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ffeed%20app.png?alt=media&token=90c97c34-b22c-4996-8cc5-74a9e1284a91',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/next-js-supabase-auth/tree/main/src/app',
+    show: true,
+    // order: 12,
   },
   {
     lineOne: 'PYTHON - REACT - AWS',
@@ -30,7 +42,29 @@ export const showcaseArr = [
     gitLink:
       'https://github.com/adam-ellis-programmer/django-shop-frontend-test',
     show: true,
-    order: 3,
+    // order: 3,
+  },
+  {
+    lineOne: 'FIREBASE',
+    lineTwo: 'property rental site',
+    fullStack: true,
+    link: 'https://www.smart-property.biz/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fsmart.png?alt=media&token=431db1a8-b996-4525-8963-39769787a8ee',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/smart-property-rentals-updated',
+    show: true,
+    // order: 2,
+  },
+
+  {
+    lineOne: 'MERN',
+    lineTwo: 'e commerce shop',
+    fullStack: true,
+    link: 'https://jungle-store-frontend.vercel.app/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fjungle.png?alt=media&token=9a22056c-41bd-4222-ad04-1441b1114f1f',
+    gitLink: 'https://github.com/adam-ellis-programmer/jungle-store',
+    show: true,
+    // order: 5,
   },
   {
     lineOne: 'FIREBASE',
@@ -40,17 +74,7 @@ export const showcaseArr = [
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Feasy-data.png?alt=media&token=987d6bc0-edd6-4612-993d-11d9b333df88',
     gitLink: 'https://github.com/adam-ellis-programmer/firebase-crm-updated',
     show: true,
-    order: 4,
-  },
-  {
-    lineOne: 'MERN',
-    lineTwo: 'e commerce shop',
-    fullStack: true,
-    link: 'https://jungle-store-frontend.vercel.app/',
-    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fjungle.png?alt=media&token=9a22056c-41bd-4222-ad04-1441b1114f1f',
-    gitLink: 'https://github.com/adam-ellis-programmer/jungle-store',
-    show: true,
-    order: 5,
+    // order: 4,
   },
   {
     lineOne: 'MERN',
@@ -61,7 +85,7 @@ export const showcaseArr = [
     gitLink:
       'https://github.com/adam-ellis-programmer/content-managment-system',
     show: true,
-    order: 6,
+    // order: 6,
   },
   {
     lineOne: 'VANILLA JAVASCRIPT',
@@ -71,7 +95,7 @@ export const showcaseArr = [
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fvanilla-shop.png?alt=media&token=a55f7495-2524-45a1-8352-9db207646a71',
     gitLink: 'https://github.com/adam-ellis-programmer/vanilla-js-shop-updated',
     show: true,
-    order: 7,
+    // order: 7,
   },
   {
     lineOne: 'FIREBASE',
@@ -82,7 +106,7 @@ export const showcaseArr = [
     gitLink:
       'https://github.com/adam-ellis-programmer/firebase-admin-pannel-updated',
     show: true,
-    order: 8,
+    // order: 8,
   },
   {
     lineOne: 'VANILLA JAVASCRIPT',
@@ -92,7 +116,7 @@ export const showcaseArr = [
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ftravel-landing-page.png?alt=media&token=05eada7f-d017-4356-bde4-ab6b4de484e0',
     gitLink: 'https://github.com/adam-ellis-programmer/travel-blaze-updated',
     show: true,
-    order: 9,
+    // order: 9,
   },
   {
     lineOne: 'REACT FRONTEND',
@@ -103,7 +127,7 @@ export const showcaseArr = [
     gitLink:
       'https://github.com/adam-ellis-programmer/Comfy-Store---course-React-Router-6.4-RTK',
     show: true,
-    order: 10,
+    // order: 10,
   },
   {
     lineOne: 'MERN',
@@ -114,16 +138,6 @@ export const showcaseArr = [
     gitLink:
       'https://github.com/adam-ellis-programmer/jobify--course--split-server-frontend',
     show: true,
-    order: 11,
-  },
-  {
-    lineOne: 'NEXT JS - PostgreSQL',
-    lineTwo: 'social media infinate scroll ',
-    fullStack: true,
-    link: '/',
-    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ffeed%20app.png?alt=media&token=90c97c34-b22c-4996-8cc5-74a9e1284a91',
-    gitLink: '/',
-    show: true,
-    order: 12,
+    // order: 11,
   },
 ]
