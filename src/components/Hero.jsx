@@ -48,7 +48,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
           <div className='flex justify-center'>
             <div className='w-fit'>
               <div className=''>
-                <h1 className='tracking-widest clamp-hero-p'>Adam Ellis 1</h1>
+                <h1 className='tracking-widest clamp-hero-p'>Adam Ellis</h1>
                 <h2 className='text-6xl tracking-[0.4rem] clamp-hero-p-1 mt-1'>
                   programmer
                 </h2>
