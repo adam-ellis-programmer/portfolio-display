@@ -36,11 +36,11 @@ const LazyImage = ({
       observer.observe(imgRef.current)
     }
 
-    // Cleanup function --??
+    // Cleanup function
     return () => {
       observer.disconnect()
     }
-  }, [options]) // This is correct with useMemo
+  }, [options])
 
   const handleImageLoad = () => {
     setIsLoaded(true)

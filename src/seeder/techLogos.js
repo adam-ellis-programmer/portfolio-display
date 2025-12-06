@@ -10,6 +10,11 @@ export const techlogoData = [
     logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2F10.png?alt=media&token=2a285823-6b70-4860-a2ef-439e41b7e120',
   },
   {
+    // order: 2.1,
+    name: 'React Native',
+    logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2Freact%20native.png?alt=media&token=22684ece-7a3a-4c7e-94d7-d0174e2b86e5',
+  },
+  {
     // order: 3,
     name: 'Redux',
     logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2F11.png?alt=media&token=baf9a43f-2d0d-4b82-af58-7efd00b55e88',

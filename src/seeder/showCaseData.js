@@ -1,6 +1,18 @@
 export const showcaseArr = [
   {
     // lineOne: 'MERN CHAT APP / SOCKET.IO',
+    lineOne: 'NEXT JS / Supabase ',
+    lineTwo: 'Travel E Commerce Site',
+    fullStack: true,
+    link: 'https://supabase-next-js-travel-ts.vercel.app/',
+    url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Ftravel%20site%202025%20img.jpg?alt=media&token=9567ce4a-5bf5-4af0-936b-51e2a08337ba',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/Supabase-Next-Js-Travel-TS',
+    show: true,
+    // order: 1,
+  },
+  {
+    // lineOne: 'MERN CHAT APP / SOCKET.IO',
     lineOne: 'MERN Chat App with Socket.io',
     lineTwo: 'full stack authenticaion chat app',
     fullStack: true,
@@ -18,7 +30,8 @@ export const showcaseArr = [
     fullStack: true,
     link: 'https://docker-django-fullstack-tailwind-server-render-production.up.railway.app',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Fdjango%20feed.png?alt=media&token=1ba1e74f-c680-478b-9578-b0fc7cb1099a',
-    gitLink: 'https://github.com/adam-ellis-programmer/docker-django-fullstack-tailwind-server-render',
+    gitLink:
+      'https://github.com/adam-ellis-programmer/docker-django-fullstack-tailwind-server-render',
     show: true,
     // order: 12,
   },

@@ -20,6 +20,7 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig)
-export const analytics = getAnalytics(app) 
+// only when seeding the databse do we need to comment out analytics
+export const analytics = getAnalytics(app)
 export const storage = getStorage(app)
 export const db = getFirestore(app)

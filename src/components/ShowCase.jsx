@@ -90,8 +90,12 @@ const ShowCase = ({ showcase }) => {
                   </div>
                 )}
                 <div className='absolute top-0 bottom-0 left-0 right-0 bg-[#012840]/50 flex items-center justify-center md:rounded-[0.6rem] flex-col z-10'>
-                  <h3 className='text-white text-3xl'>{item.lineOne}</h3>
-                  <p className='text-2xl text-white'>{item.lineTwo}</p>
+                  <h3 className='text-white text-3xl bg-[#37507787] rounded p-2'>
+                    {item.lineOne}
+                  </h3>
+                  <p className='text-2xl text-white  bg-[#37507787] rounded p-2'>
+                    {item.lineTwo}
+                  </p>
                 </div>
                 <LazyImage
                   src={item.url}
