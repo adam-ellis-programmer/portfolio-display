@@ -67,7 +67,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
             {/* Add semantic markup for better accessibility */}
             <section aria-label='Professional biography'>
               <p>
-                Adam is a seasoned technology professional with over ten years
+                !Adam is a seasoned technology professional with over ten years
                 of design experience and more than six years of programming
                 expertise. Throughout his career, he has developed a unique
                 blend of creative vision and technical implementation skills,

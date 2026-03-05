@@ -91,7 +91,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
             <section aria-label='Professional biography'>
               <p>
                 Adam is a seasoned technology professional with over ten years
-                of design experience and more than five years of programming
+                of design experience and more than six years of programming
                 expertise. Throughout his career, he has developed a unique
                 blend of creative vision and technical implementation skills,
                 allowing him to bridge the gap between aesthetic design and
