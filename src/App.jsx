@@ -15,6 +15,7 @@ import { useEffect } from 'react'
 import { analytics } from './firebase/config' // your config file
 import { logEvent } from 'firebase/analytics'
 import PasswordSetup from './password setup/PasswordSetup'
+import AISection from './components/AISection'
 
 function App() {
   const { data, loading, error } = useFirebaseData()
@@ -89,6 +90,7 @@ function App() {
         profileImgs={data.profileImgs}
       />
       <SkillsAndTech techLogos={data.techLogos} />
+      <AISection  />
       <ShowCase showcase={data.showcase} />
       <DesignSection designs={data.designs} isDarkMode={isDarkMode} />
       <SearchAndSEO isDarkMode={isDarkMode} />

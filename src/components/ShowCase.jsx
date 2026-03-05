@@ -4,6 +4,13 @@ const ShowCase = ({ showcase }) => {
   // Sort the showcase data by the order property
   const sortedShowcase = [...showcase].sort((a, b) => a.order - b.order)
 
+  // spinner
+  /**
+ *   <div className='bg-[#1e293b] w-full h-full absolute top-0 left-0 z-100 flex justify-center items-center'>
+      <div className='border-[4px] text-white h-20 w-20 rounded-full border-t-rose-500 animate-spin'></div>
+    </div>
+   */
+
   return (
     <section id='showCase' className='min-h-screen'>
       <h3 className='text-4xl text-center my-5'>Showcased Projects</h3>

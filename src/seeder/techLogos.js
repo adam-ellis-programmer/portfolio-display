@@ -1,6 +1,11 @@
 export const techlogoData = [
   {
     // order: 1,
+    name: 'Java',
+    logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2Fjava%20logo.png?alt=media&token=b627419f-1ea1-4573-a1e1-a80162049cd9',
+  },
+  {
+    // order: 1,
     name: 'MERN',
     logo: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/tech%20logos%2F1.png?alt=media&token=5140883e-a226-4adf-b703-bde70b0846e4',
   },
