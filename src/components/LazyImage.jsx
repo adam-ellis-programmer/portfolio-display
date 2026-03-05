@@ -52,8 +52,12 @@ const LazyImage = ({
   }
 
   return (
-    <div ref={imgRef} className={`lazy-image-container ${className}`}>
+    // custom className
+    <div ref={imgRef} className={`lazy-image-container ${className} h-full`}>
       {/* Show placeholder while not in view or loading */}
+      {/* <div className='bg-[#1e293b] w-full h-full absolute top-0 left-0 z-100 flex justify-center items-center'>
+        <div className='border-[4px] text-white h-20 w-20 rounded-full border-t-rose-500 animate-spin'></div>
+      </div> */}
       {!isLoaded && (
         <div className={`lazy-placeholder ${className}`}>
           {placeholder || (

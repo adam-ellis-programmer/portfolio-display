@@ -6,7 +6,8 @@ const ShowCase = ({ showcase }) => {
 
   // spinner
   /**
- *   <div className='bg-[#1e293b] w-full h-full absolute top-0 left-0 z-100 flex justify-center items-center'>
+ * 
+   <div className='bg-[#1e293b] w-full h-full absolute top-0 left-0 z-100 flex justify-center items-center'>
       <div className='border-[4px] text-white h-20 w-20 rounded-full border-t-rose-500 animate-spin'></div>
     </div>
    */
@@ -85,9 +86,9 @@ const ShowCase = ({ showcase }) => {
           return (
             <div
               key={item.id || i}
-              className='rounded-[0.6rem] relative hover '
+              className='rounded-[0.6rem] relative hover h-full '
             >
-              <a href={item.link}>
+              <a href={item.link} className=''>
                 {item.fullStack && (
                   <div className='absolute top-3 z-20 flex justify-end w-full px-5'>
                     <div className='text-white bg-rose-500 p-1 rounded'>
@@ -108,7 +109,7 @@ const ShowCase = ({ showcase }) => {
                   src={item.url}
                   alt={`${item.lineOne} project screenshot`}
                   // min height helps for lazy loading
-                  className='w-full md:rounded-[0.6rem] min-h-[300px]'
+                  className='w-full md:rounded-[0.6rem] min-h-[300px] h-full'
                   threshold={0.1}
                   rootMargin='100px'
                 />

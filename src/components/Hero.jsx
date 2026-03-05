@@ -10,6 +10,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
     if (profileImgs && profileImgs.length > 0) {
       let completedImages = 0
       const totalImages = profileImgs.length
+      console.log('total images: ', totalImages)
 
       const checkAllLoaded = () => {
         completedImages++
@@ -33,6 +34,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
           checkAllLoaded() // Still count as "complete" to avoid hanging
         }
 
+        // append link
         document.head.appendChild(link)
       })
     } else {
@@ -98,8 +100,8 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
                 communication, and interface aesthetics, while his programming
                 skills enable him to bring complex digital concepts to life.
                 Adam's dual expertise makes him particularly valuable in
-                creating cohesive, user-centered, data driven digital solutions that are both
-                visually compelling and technically robust.
+                creating cohesive, user-centered, data driven digital solutions
+                that are both visually compelling and technically robust.
               </p>
             </section>
 
