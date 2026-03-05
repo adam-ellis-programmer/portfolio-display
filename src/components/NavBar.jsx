@@ -38,7 +38,11 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
           <img className='w-40' src={img} alt='' />
         )}
         <div className=' flex w-25 justify-between'>
-          <DarkMode mobile isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+          <DarkMode
+            mobile
+            isDarkMode={isDarkMode}
+            setIsDarkMode={setIsDarkMode}
+          />
           <button
             className='block lg:hidden'
             onClick={() => {
@@ -53,7 +57,14 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
             return (
               <li className='w-30 text-center mx-1 text-[1.2rem] ' key={i}>
                 <span className='main-nav-li'>
-                  <a href={item.link}>{item.text}</a>
+                  <a href={item.link}>
+                    <span className={i === 0 && ''}>
+                      {item.text}{' '}
+                      {i === 0 && (
+                        <i class='fa-solid ml-3 fa-wand-sparkles'></i>
+                      )}
+                    </span>
+                  </a>
                 </span>
               </li>
             )
