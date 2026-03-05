@@ -1,7 +1,7 @@
 const testUrls = [
   {
     url: 'https://icon.icepanel.io/Technology/png-shadow-512/Jupyter.png',
-    text: 'Jupyter',
+    text: 'Jupyter Note Book',
   },
   { url: 'https://icon.icepanel.io/Technology/svg/NumPy.svg', text: 'NumPy' },
   {
