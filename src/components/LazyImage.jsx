@@ -9,8 +9,6 @@ const LazyImage = ({
   onLoad = null,
   threshold = 0.1,
   rootMargin = '50px',
-  // only show loader for showcase
-  showCaseLoader, // <--  not in use
 }) => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [isInView, setIsInView] = useState(false)
@@ -66,6 +64,8 @@ const LazyImage = ({
         <div className={`lazy-placeholder ${className}`}>
           {/* *** only shows if we do not pass our own placehodler *** */}
           {placeholder || (
+            // *** Default Loader ***
+            // ~~~~~~~~~~~~~~~~~~~~~~
             <div className='bg-gray-200 dark:bg-gray-700 animate-pulse flex items-center justify-center'>
               <svg
                 className='w-8 h-8 text-gray-400'

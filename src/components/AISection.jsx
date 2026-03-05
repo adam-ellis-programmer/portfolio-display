@@ -35,6 +35,7 @@ const AISection = () => {
               <div className='hover mb-5 border-b border-dashed md:border-none pb-5 md:pb-0'>
                 <div className=' md:shadow-2xl flex items-center justify-center p-2'>
                   {/* TODO: */}
+                  {/* Use lazy load image .... */}
                   {/* Change to Lazy Image Component with own AIImageProp (prop) to display custom loader */}
                   <img
                     className='h-[200px]'
