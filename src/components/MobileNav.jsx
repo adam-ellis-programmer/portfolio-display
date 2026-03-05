@@ -2,7 +2,9 @@ import React from 'react'
 
 const MobileNav = ({ setIsNavOpen, links, isDarkMode }) => {
   return (
-    <aside className={` fixed top-0 bottom-0 w-full ${isDarkMode ? 'bg-[#576276]' : 'bg-white'} z-100 block lg:hidden p-10  overflow-scroll`}>
+    <aside
+      className={` fixed top-0 bottom-0 w-full ${isDarkMode ? 'bg-[#576276]' : 'bg-white'} z-100 block lg:hidden p-10  overflow-scroll`}
+    >
       <div className='h-10 flex justify-end px-5'>
         <button className='cursor-pointer' onClick={() => setIsNavOpen(false)}>
           <i className='text-5xl fa-solid fa-square-xmark'></i>
@@ -18,7 +20,10 @@ const MobileNav = ({ setIsNavOpen, links, isDarkMode }) => {
               className='text-3xl mb-5'
             >
               <a className=' w-full  block h-full' href={item.link}>
-                {item.text}
+                <span className={i === 0 && ''}>
+                  {item.text}{' '}
+                  {i === 0 && <i class='fa-solid ml-3 fa-wand-sparkles'></i>}
+                </span>
               </a>
             </li>
           )
