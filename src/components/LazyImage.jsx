@@ -55,7 +55,7 @@ const LazyImage = ({
 
   return (
     // custom className
-    <div ref={imgRef} className={`lazy-image-container ${className} h-full`}>
+    <div ref={imgRef} className={`lazy-image-container ${className} `}>
       {/* Show placeholder while not in view or loading */}
       {showCaseLoader && !isLoaded && (
         <div className='bg-[#1e293b] w-full h-full absolute top-0 left-0 z-100 flex justify-center items-center'>
