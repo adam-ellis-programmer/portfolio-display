@@ -112,7 +112,11 @@ const ShowCase = ({ showcase }) => {
                   className='w-full md:rounded-[0.6rem] min-h-[300px] h-full'
                   threshold={0.1}
                   rootMargin='100px'
-                  showCaseLoader
+                  placeholder={
+                    <div className='bg-[#1e293b] w-full h-full absolute top-0 left-0 z-100 flex justify-center items-center'>
+                      <div className='border-[4px] text-white h-20 w-20 rounded-full border-t-rose-500 animate-spin'></div>
+                    </div>
+                  }
                 />
               </a>
               <a

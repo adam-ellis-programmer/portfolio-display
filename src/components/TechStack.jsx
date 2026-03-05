@@ -3,7 +3,7 @@ import LazyImage from './LazyImage'
 
 const TechStack = ({ techLogos }) => {
   const sortedLogos = [...techLogos].sort(
-    (a, b) => (a.order || 0) - (b.order || 0)
+    (a, b) => (a.order || 0) - (b.order || 0),
   )
 
   return (
@@ -21,6 +21,7 @@ const TechStack = ({ techLogos }) => {
                 className='h-[150px] w-[150px] object-contain'
                 threshold={0.2}
                 rootMargin='50px'
+                // ***** custom place holder *****
                 placeholder={
                   <div className='h-[150px] w-[150px] bg-gray-200 dark:bg-gray-700 animate-pulse rounded flex items-center justify-center'>
                     <div className='text-gray-400 text-sm text-center'>
