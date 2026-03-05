@@ -112,6 +112,7 @@ const ShowCase = ({ showcase }) => {
                   className='w-full md:rounded-[0.6rem] min-h-[300px] h-full'
                   threshold={0.1}
                   rootMargin='100px'
+                  showCaseLoader
                 />
               </a>
               <a
