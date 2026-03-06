@@ -29,7 +29,9 @@ const AISection = () => {
           </p>
         </h3>
 
-        <div className='mt-11 min-h-[200px]   grid md:grid-cols-2 lg:grid-cols-5 gap-5 rounded p-3'>
+        <div
+          className={`mt-11 min-h-[200px]   grid md:grid-cols-2 lg:grid-cols-${testUrls.length} gap-5 rounded p-3`}
+        >
           {testUrls.map((item) => {
             return (
               <div className='hover mb-5 border-b border-dashed md:border-none pb-5 md:pb-0'>

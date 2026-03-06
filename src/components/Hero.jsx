@@ -35,6 +35,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
         }
 
         // append link
+        // injecting into the head
         document.head.appendChild(link)
       })
     } else {

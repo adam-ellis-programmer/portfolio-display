@@ -16,6 +16,14 @@ const LazyImage = ({
   const imgRef = useRef()
 
   // Memoize options to prevent unnecessary re-renders
+  // Every re-render creates a BRAND NEW object in memory
+  // JavaScript compares objects by reference not by value:
+
+  /**
+      So without useMemo, every re-render would create a new options object, 
+      which would trigger the useEffect dependency check, which would restart 
+      the IntersectionObserver unnecessarily.
+   */
   // prettier-ignore
   const options = useMemo(() => ({
       threshold,
