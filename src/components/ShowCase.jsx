@@ -81,7 +81,7 @@ const ShowCase = ({ showcase }) => {
           background creates exceptional digital experiences.
         </p>
       </div>
-      <div className=' max-w-[700px] mx-auto mb-6 rounded flex justify-center items-center bg-red-300 p-2'>
+      <div className=' max-w-[700px] mx-5 md:mx-auto mb-6 rounded flex justify-center items-center bg-red-300 p-2'>
         <div className=''>
           <p className='text-center capitalize'>
             <i className='fa-solid fa-circle-info mr-2  text-red-600'></i>
