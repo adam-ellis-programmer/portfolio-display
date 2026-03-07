@@ -105,6 +105,7 @@ const ShowCase = ({ showcase }) => {
                     {item.lineTwo}
                   </p>
                 </div>
+                {/* creates many fucntions (new component) holds own individual state */}
                 <LazyImage
                   src={item.url}
                   alt={`${item.lineOne} project screenshot`}

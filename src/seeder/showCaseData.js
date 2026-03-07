@@ -47,13 +47,13 @@ export const showcaseArr = [
     // order: 12,
   },
   {
-    lineOne: 'PYTHON - REACT - AWS',
+    lineOne: 'PYTHON - REACT',
     lineTwo: 'e commerce shop',
     fullStack: true,
-    link: 'https://easy-shop.biz/',
+    link: 'https://django-easy-shop-vercel-frontend-ma.vercel.app/',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Feasy-store.png?alt=media&token=452d74ee-9f57-4c00-aee8-c4644f5956fe',
     gitLink:
-      'https://github.com/adam-ellis-programmer/django-shop-frontend-test',
+      'https://github.com/adam-ellis-programmer/django-easy-shop-vercel-frontend-March-02-2026',
     show: true,
     // order: 3,
   },

@@ -28,9 +28,9 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
 
     return () => {}
   }, [isNavOpen])
-
+  // shadow-[1px_2px_11px_rgba(0,0,0,0.1)]
   return (
-    <nav className=' h-25 shadow-[1px_2px_11px_rgba(0,0,0,0.1)] md:shadow-none mb-10 md:mb-0 '>
+    <nav className=' h-25  md:shadow-none mb-10 md:mb-0 '>
       <div className='mx-width  mx-auto  flex items-center h-full  justify-between px-10'>
         {isDarkMode ? (
           <img className='w-40' src={imgWhite} alt='' />
