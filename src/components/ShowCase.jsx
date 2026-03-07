@@ -86,6 +86,7 @@ const ShowCase = ({ showcase }) => {
           <p className='text-center capitalize'>Vanilla JavaScript Projects may take a few extra seconds extra to load!</p>
         </div>
       </div>
+      {/*  */}
       <div className='grid md:grid-cols-2 gap-5 max-w-[1400px] mx-auto'>
         {sortedShowcase.map((item, i) => {
           return (
