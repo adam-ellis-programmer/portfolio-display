@@ -83,7 +83,13 @@ const ShowCase = ({ showcase }) => {
       </div>
       <div className=' max-w-[700px] mx-auto mb-6 rounded flex justify-center items-center bg-red-300 p-2'>
         <div className=''>
-          <p className='text-center capitalize'>Vanilla JavaScript Projects may take a few extra seconds extra to load!</p>
+          <p className='text-center capitalize'>
+            <i className='fa-solid fa-circle-info mr-2 animate-pulse'></i>
+            <span>
+              Vanilla JavaScript Projects may take a few extra seconds extra to
+              load!
+            </span>
+          </p>
         </div>
       </div>
       <div className='grid md:grid-cols-2 gap-5 max-w-[1400px] mx-auto'>
