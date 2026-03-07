@@ -30,7 +30,7 @@ const AISection = () => {
         </h3>
 
         <div
-          className={`mt-11 min-h-[200px]   grid md:grid-cols-2 lg:grid-cols-${testUrls.length} gap-5 rounded p-3`}
+          className={`mt-11 min-h-[200px]   grid md:grid-cols-2 lg:grid-cols-5 gap-5 rounded p-3`}
         >
           {testUrls.map((item) => {
             return (
