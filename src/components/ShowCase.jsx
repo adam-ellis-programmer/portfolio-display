@@ -81,6 +81,11 @@ const ShowCase = ({ showcase }) => {
           background creates exceptional digital experiences.
         </p>
       </div>
+      <div className=' max-w-[700px] mx-auto mb-6 rounded flex justify-center items-center bg-red-300 p-2'>
+        <div className=''>
+          <p className='text-center capitalize'>Vanilla JavaScript Projects may take a few extra seconds extra to load!</p>
+        </div>
+      </div>
       <div className='grid md:grid-cols-2 gap-5 max-w-[1400px] mx-auto'>
         {sortedShowcase.map((item, i) => {
           return (
