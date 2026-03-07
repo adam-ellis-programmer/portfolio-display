@@ -24,11 +24,11 @@ const ShowCase = ({ showcase }) => {
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
-              <span className='ml-2 text-[1.2rem]'>8 Full Stack</span>
+              <span className='ml-2 text-[1.2rem]'>11+ Full Stack</span>
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
-              <span className='ml-2 text-[1.2rem]'>1 Python Django</span>
+              <span className='ml-2 text-[1.2rem]'>3 Python Django</span>
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
@@ -36,7 +36,7 @@ const ShowCase = ({ showcase }) => {
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
-              <span className='ml-2 text-[1.2rem]'>9 + React</span>
+              <span className='ml-2 text-[1.2rem]'>10 + React</span>
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
@@ -56,7 +56,7 @@ const ShowCase = ({ showcase }) => {
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>
-              <span className='ml-2 text-[1.2rem]'>4 + Next JS</span>
+              <span className='ml-2 text-[1.2rem]'>5 + Next JS</span>
             </li>
             <li className='flex items-center mb-1'>
               <i className='fa-solid fa-circle-check text-2xl text-[#60a5fa]'></i>

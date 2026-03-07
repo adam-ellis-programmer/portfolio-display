@@ -99,7 +99,7 @@ const LazyImage = ({
           className={`${className} ${
             isLoaded ? 'opacity-100' : 'opacity-0'
           } transition-opacity duration-300`}
-          onLoad={handleImageLoad}
+          onLoad={handleImageLoad} // ??
           onError={handleImageError}
           style={{ display: isLoaded ? 'block' : 'none' }}
         />
