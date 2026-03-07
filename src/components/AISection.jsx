@@ -12,9 +12,14 @@ const testUrls = [
     url: 'https://icon.icepanel.io/Technology/svg/Matplotlib.svg',
     text: 'Matplotlib',
   },
+  
   {
     url: 'https://icon.icepanel.io/Technology/svg/scikit-learn.svg',
     text: 'SciKit Learn',
+  },
+  {
+    url: 'https://icon.icepanel.io/Technology/svg/Anaconda.svg',
+    text: 'Anaconda',
   },
 ]
 
@@ -30,7 +35,7 @@ const AISection = () => {
         </h3>
 
         <div
-          className={`mt-11 min-h-[200px]   grid md:grid-cols-2 lg:grid-cols-5 gap-5 rounded p-3`}
+          className={`mt-11 min-h-[200px]   grid md:grid-cols-2 lg:grid-cols-6 gap-5 rounded p-3`}
         >
           {testUrls.map((item) => {
             return (

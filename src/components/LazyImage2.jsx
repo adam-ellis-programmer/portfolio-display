@@ -1,7 +1,15 @@
 // src/components/LazyImage.jsx
 import React, { useState, useRef, useEffect, useMemo } from 'react'
 
-const LazyImage2 = () => {
+const LazyImage2 = (
+  src,
+  alt,
+  className = '',
+  placeholder = null,
+  onLoad = null,
+  threshold = 0.1,
+  rootMargin = '50px',
+) => {
   const [isLoaded, setIsLoaded] = useState(false)
   const [isInView, setIsInView] = useState(false)
   const [hasError, setHasError] = useState(false)
