@@ -16,16 +16,36 @@ const LazyImage2 = (
   const imgRef = useRef()
 
   useEffect(() => {
-    // prettier-ignore
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      scrollMargin: '0px',
+      threshold: 1.0,
+    }
+
+    // Each LazyImage instance has its own observer closed over inside its own useEffect:
+    // Why Disconnect at All?
+    // Once the image is in view and loading, you don't need to watch it anymore — it's a one time job:
+    // It's like a security guard who only needs to open the door once — once you're in, they can go home. No point standing there watching a door that's already been opened.
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          let elem = entry.target
+          console.log(elem)
+        }
+      })
+    }, options)
+
+    observer.observe(imgRef.current)
 
     return () => {
-      // observer.disconnect()
+      observer.disconnect()
     }
   }, [])
 
   return (
     <div ref={imgRef} className={`lazy-image-container ${className} `}>
-      <img src='' alt='' />
+      <img src={src} alt='' />
     </div>
   )
 }
