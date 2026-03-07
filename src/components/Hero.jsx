@@ -10,7 +10,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
     if (profileImgs && profileImgs.length > 0) {
       let completedImages = 0
       const totalImages = profileImgs.length
-      console.log('total images: ', totalImages)
+      // console.log('total images: ', totalImages)
 
       const checkAllLoaded = () => {
         completedImages++

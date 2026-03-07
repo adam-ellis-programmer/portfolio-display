@@ -12,7 +12,7 @@ const testUrls = [
     url: 'https://icon.icepanel.io/Technology/svg/Matplotlib.svg',
     text: 'Matplotlib',
   },
-  
+
   {
     url: 'https://icon.icepanel.io/Technology/svg/scikit-learn.svg',
     text: 'SciKit Learn',
@@ -37,9 +37,12 @@ const AISection = () => {
         <div
           className={`mt-11 min-h-[200px]   grid md:grid-cols-2 lg:grid-cols-6 gap-5 rounded p-3`}
         >
-          {testUrls.map((item) => {
+          {testUrls.map((item, i) => {
             return (
-              <div className='hover mb-5 border-b border-dashed md:border-none pb-5 md:pb-0'>
+              <div
+                key={i}
+                className='hover mb-5 border-b border-dashed md:border-none pb-5 md:pb-0'
+              >
                 <div className=' md:shadow-2xl flex items-center justify-center p-2'>
                   {/* TODO: */}
                   {/* Use lazy load image .... */}

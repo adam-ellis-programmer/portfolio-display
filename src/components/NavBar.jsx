@@ -58,10 +58,10 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
               <li className='w-30 text-center mx-1 text-[1.2rem] ' key={i}>
                 <span className='main-nav-li'>
                   <a href={item.link}>
-                    <span className={i === 0 && ''}>
+                    <span className={``}>
                       {item.text}{' '}
                       {i === 0 && (
-                        <i class='fa-solid ml-3 fa-wand-sparkles'></i>
+                        <i className='fa-solid ml-3 fa-wand-sparkles'></i>
                       )}
                     </span>
                   </a>

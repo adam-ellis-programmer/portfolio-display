@@ -97,13 +97,14 @@ const ShowCase = ({ showcase }) => {
                     </div>
                   </div>
                 )}
-                <div className='absolute top-0 bottom-0 left-0 right-0 bg-[#012840]/40 flex items-center justify-center md:rounded-[0.6rem] flex-col z-10'>
-                  <h3 className='text-white text-3xl bg-[#375077]  p-2'>
-                    {item.lineOne}
-                  </h3>
-                  <p className='text-2xl text-white  bg-[#375077]  p-2'>
-                    {item.lineTwo}
-                  </p>
+                <div className='absolute  top-0 bottom-0 left-0 right-0 bg-[#012840]/40 flex items-center justify-center md:rounded-[0.6rem] flex-col z-10'>
+                  
+                  <div className='bg-[#375077] p-8 rounded shadow-3xl -shadow-3xl'>
+                    <h3 className='text-white text-3xl  text-center leading-11'>
+                      {item.lineOne}
+                    </h3>
+                    <p className='text-2xl text-white text-center  leading-11'>{item.lineTwo}</p>
+                  </div>
                 </div>
                 {/* creates many fucntions (new component) holds own individual state */}
                 <LazyImage
