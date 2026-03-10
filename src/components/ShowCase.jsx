@@ -1,6 +1,6 @@
 import LazyImage from './LazyImage'
 
-const ShowCase = ({ showcase }) => {
+const ShowCase = ({ showcase, isDarkMode }) => {
   // Sort the showcase data by the order property
   const sortedShowcase = [...showcase].sort((a, b) => a.order - b.order)
 
@@ -81,11 +81,13 @@ const ShowCase = ({ showcase }) => {
           background creates exceptional digital experiences.
         </p>
       </div>
+
+      {/* isDarkMode */}
       <div className=' max-w-[700px] mx-5 md:mx-auto mb-6 rounded flex justify-center items-center bg-red-300 p-2'>
         <div className=''>
           <p className='text-center capitalize'>
             <i className='fa-solid fa-circle-info mr-2  text-red-600'></i>
-            <span>
+            <span className={`${isDarkMode && 'text-black'}`}>
               Vanilla JavaScript Projects may take a few extra seconds extra to
               load!
             </span>
@@ -133,12 +135,20 @@ const ShowCase = ({ showcase }) => {
                   }
                 />
               </a>
-              <a
-                className='text-white absolute bottom-4 right-4 z-20 text-5xl'
-                href={item.gitLink}
-              >
-                <i className='fa-brands fa-github'></i>
-              </a>
+              <div className='text-white absolute bottom-4 right-4 z-20 text-5xl flex space-x-2'>
+                {/* <a className='' href={item.gitLink}>
+                  <div className='flex flex-col items-center justify-center'>
+                    <i className='fa-brands fa-github'></i>
+                    <p className='text-sm'>server</p>
+                  </div>
+                </a> */}
+                <a className='' href={item.gitLink}>
+                  <div className='flex flex-col items-center justify-center'>
+                    <i className='fa-brands fa-github'></i>
+                    {/* <p className='text-sm'>frontend</p> */}
+                  </div>
+                </a>
+              </div>
             </div>
           )
         })}

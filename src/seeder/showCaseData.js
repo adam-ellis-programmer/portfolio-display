@@ -50,7 +50,7 @@ export const showcaseArr = [
     lineOne: 'PYTHON - REACT',
     lineTwo: 'e commerce shop',
     fullStack: true,
-    link: 'https://django-easy-shop-vercel-frontend-ma.vercel.app/',
+    link: 'https://www.easy-shop.biz/',
     url: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/project%20images%2Feasy-store.png?alt=media&token=452d74ee-9f57-4c00-aee8-c4644f5956fe',
     gitLink:
       'https://github.com/adam-ellis-programmer/django-easy-shop-vercel-frontend-March-02-2026',

@@ -91,7 +91,7 @@ function App() {
       />
       <SkillsAndTech techLogos={data.techLogos} />
       <AISection  />
-      <ShowCase showcase={data.showcase} />
+      <ShowCase showcase={data.showcase} isDarkMode={isDarkMode} />
       <DesignSection designs={data.designs} isDarkMode={isDarkMode} />
       <SearchAndSEO isDarkMode={isDarkMode} />
       <Contact />
