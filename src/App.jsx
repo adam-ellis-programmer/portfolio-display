@@ -65,6 +65,7 @@ function App() {
     }
 
     // Save to localStorage
+    // sets once on page load and then changes on toggle
     localStorage.setItem('darkTheme', JSON.stringify(isDarkMode))
   }, [isDarkMode])
 
@@ -90,7 +91,7 @@ function App() {
         profileImgs={data.profileImgs}
       />
       <SkillsAndTech techLogos={data.techLogos} />
-      <AISection  />
+      <AISection />
       <ShowCase showcase={data.showcase} isDarkMode={isDarkMode} />
       <DesignSection designs={data.designs} isDarkMode={isDarkMode} />
       <SearchAndSEO isDarkMode={isDarkMode} />

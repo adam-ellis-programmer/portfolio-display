@@ -7,4 +7,5 @@ export const designData = [
     { img: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/design%20logos%2F5.svg.png?alt=media&token=53092061-61b3-4148-8b7a-f70cce1a7925' },
     { img: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/design%20logos%2F6.png?alt=media&token=df452ddf-2d0a-4247-a303-4cc40d8167dd' },
     { img: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/design%20logos%2F7.png?alt=media&token=066977a9-ab31-4be7-98fb-43f964dfece6' },
+    { img: 'https://firebasestorage.googleapis.com/v0/b/my-portfolio-app-90783.firebasestorage.app/o/design%20logos%2FAffinity.png?alt=media&token=74135a50-b26d-48ce-b02d-46b6809ede7f' },
   ]

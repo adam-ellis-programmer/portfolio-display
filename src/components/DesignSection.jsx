@@ -11,6 +11,7 @@ const DesignSection = ({ designs, isDarkMode }) => {
     'figma',
     'in design',
     'apple motion',
+    'affinity',
   ]
 
   return (
@@ -37,8 +38,8 @@ const DesignSection = ({ designs, isDarkMode }) => {
           </p>
         </div>
 
-        <div className='mt-18'>
-          <div className='grid grid-cols-2 md:grid-cols-7 gap-6'>
+        <div className='mt-18 mx-8 md:mx-0'>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6'>
             {designs.map((item, i) => {
               return (
                 <div
@@ -82,7 +83,7 @@ const DesignSection = ({ designs, isDarkMode }) => {
                         isDarkMode ? 'text-[#b2a6a6]' : 'text-[#D90404]'
                       }`}
                     ></i>
-                    <span className='ml-5 text-2xl'>{item}</span>
+                    <span className='ml-5 text-2xl capitalize'>{item}</span>
                   </li>
                 )
               })}
