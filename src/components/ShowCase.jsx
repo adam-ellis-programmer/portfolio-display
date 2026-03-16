@@ -88,7 +88,7 @@ const ShowCase = ({ showcase, isDarkMode }) => {
           <p className='text-center capitalize'>
             <i className='fa-solid fa-circle-info mr-2  text-red-600'></i>
             <span className={`${isDarkMode && 'text-black'}`}>
-              Vanilla JavaScript Projects may take a few extra seconds to
+              Vanilla JavaScript Projects & data may take a few extra seconds to
               load!
             </span>
           </p>
