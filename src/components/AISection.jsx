@@ -28,9 +28,13 @@ const AISection = () => {
     <section id='AI' className=' min-h-[500px] max-w-[1700px]  mx-auto'>
       <div>
         <h3 className='text-4xl text-center mt-10 mb-5 text-blue-500'>
-          Artificial Intelligence
+          Artificial Intelligence <span className="text-3xl inline-block ">&</span>
           <p>
-            <span className='text-3xl  text-blue-500'>&</span> data science
+            {/* <span className='text-3xl  text-blue-500'>&</span> data science */}
+            <span className="leading-13 block">
+              {/* <span className='text-3xl   text-blue-500'>&</span>{' '} */}
+              <span> Machine Learning</span>
+            </span>
           </p>
         </h3>
 
