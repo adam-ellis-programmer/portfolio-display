@@ -157,9 +157,14 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
 
             <div className='mt-5'>
               <div className='max-w-[400px] mx-auto text-end'>
-                <p className='text-2xl tracking-[0.5rem]'>over 14 projects</p>
+                {/* <p className='text-2xl tracking-[0.5rem]'>over 14 projects</p>
                 <p className='text-2xl tracking-[0.7rem]'>available for</p>
-                <p className='text-2xl tracking-[0.9rem]'>demoing</p>
+                <p className='text-2xl tracking-[0.9rem]'>demoing</p> */}
+
+                
+                <p className='text-2xl tracking-[0.5rem]'>from design to</p>
+                <p className='text-2xl tracking-[0.7rem]'>published</p>
+                <p className='text-2xl tracking-[0.3rem]'>products</p>
               </div>
 
               <div className='mt-10 flex justify-center'>
