@@ -64,6 +64,31 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
             </div>
           </div>
 
+          <div className=' mt-5 mx-auto max-w-[500px]'>
+            <ul className='grid md:grid-cols-2 gap-1'>
+              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+                <i className='fa-solid fa-bookmark'></i>
+                <span>software engineer</span>
+              </li>
+              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+                <i className='fa-solid fa-layer-group'></i>
+                <span>full-stack developer</span>
+              </li>
+              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+                <i className='fa-solid fa-robot'></i>
+                <span>AI integration specialist</span>
+              </li>
+              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+                <i className='fa-solid fa-palette'></i>
+                <span>systems design</span>
+              </li>
+              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+                <i className='fa-solid fa-robot'></i>
+                <span>agentic training</span>
+              </li>
+            </ul>
+          </div>
+
           <div className='max-w-[600px] m-auto mt-10 text-justify md:shadow-[1px_2px_15px_rgba(0,0,0,0.1)] p-0 md:p-10 rounded'>
             {/* Mobile hero image - wait for preload */}
             <div className='flex md:hidden justify-start min-h-[312.88px]'>
