@@ -66,23 +66,33 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
 
           <div className=' mt-5 mx-auto max-w-[500px]'>
             <ul className='grid md:grid-cols-2 gap-1'>
-              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+              <li
+                className={`bg-[#bae6fd] p-2 rounded-md flex items-center gap-2 ${isDarkMode ? 'text-black' : ''}`}
+              >
                 <i className='fa-solid fa-bookmark'></i>
                 <span>software engineer</span>
               </li>
-              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+              <li
+                className={`bg-[#bae6fd] p-2 rounded-md flex items-center gap-2 ${isDarkMode ? 'text-black' : ''}`}
+              >
                 <i className='fa-solid fa-layer-group'></i>
                 <span>full-stack developer</span>
               </li>
-              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+              <li
+                className={`bg-[#bae6fd] p-2 rounded-md flex items-center gap-2 ${isDarkMode ? 'text-black' : ''}`}
+              >
                 <i className='fa-solid fa-robot'></i>
                 <span>AI integration specialist</span>
               </li>
-              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+              <li
+                className={`bg-[#bae6fd] p-2 rounded-md flex items-center gap-2 ${isDarkMode ? 'text-black' : ''}`}
+              >
                 <i className='fa-solid fa-palette'></i>
                 <span>systems design</span>
               </li>
-              <li className='bg-[#bae6fd] p-2 rounded-md flex items-center gap-2'>
+              <li
+                className={`bg-[#bae6fd] p-2 rounded-md flex items-center gap-2 ${isDarkMode ? 'text-black' : ''}`}
+              >
                 <i className='fa-solid fa-robot'></i>
                 <span>agentic training</span>
               </li>
@@ -161,7 +171,6 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
                 <p className='text-2xl tracking-[0.7rem]'>available for</p>
                 <p className='text-2xl tracking-[0.9rem]'>demoing</p> */}
 
-                
                 <p className='text-2xl tracking-[0.5rem]'>from design to</p>
                 <p className='text-2xl tracking-[0.7rem]'>published</p>
                 <p className='text-2xl tracking-[0.3rem]'>products</p>
