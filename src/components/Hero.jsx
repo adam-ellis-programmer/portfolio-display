@@ -100,7 +100,7 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
                 className={`bg-[#bae6fd] p-2 rounded-md flex items-center gap-2 ${isDarkMode ? 'text-black' : ''}`}
               >
                 <i className='fa-solid fa-sitemap'></i>
-                <span>Multi Tennant Apps</span>
+                <span> multi-tenant applications</span>
               </li>
               <li
                 className={`bg-[#bae6fd] p-2 rounded-md flex items-center gap-2 ${isDarkMode ? 'text-black' : ''}`}
