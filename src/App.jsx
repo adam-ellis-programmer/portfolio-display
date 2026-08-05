@@ -16,6 +16,7 @@ import { analytics } from './firebase/config' // your config file
 import { logEvent } from 'firebase/analytics'
 import PasswordSetup from './password setup/PasswordSetup'
 import AISection from './components/AISection'
+import MainShowCase from './components/MainShowCase'
 
 function App() {
   const { data, loading, error } = useFirebaseData()
@@ -90,6 +91,7 @@ function App() {
         isDarkMode={isDarkMode}
         profileImgs={data.profileImgs}
       />
+      {/* <MainShowCase /> */}
       <SkillsAndTech techLogos={data.techLogos} />
       <AISection />
       <ShowCase showcase={data.showcase} isDarkMode={isDarkMode} />
