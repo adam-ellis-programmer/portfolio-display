@@ -114,6 +114,12 @@ const Hero = ({ showcase, isDarkMode, profileImgs }) => {
                 <i className='fa-solid fa-mobile-screen'></i>
                 <span>Web & Mobile</span>
               </li>
+              <li
+                className={`bg-[#bae6fd] p-2 rounded-md flex items-center gap-2 ${isDarkMode ? 'text-black' : ''}`}
+              >
+                <i className='fa-solid fa-mobile-screen'></i>
+                <span>Enterprise Grade Applications</span>
+              </li>
             </ul>
           </div>
 

@@ -11,6 +11,7 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
   const [isNavOpen, setIsNavOpen] = useState(false)
   const links = [
     { text: 'AI', link: '#AI' },
+    { text: 'Legal RAG', link: '#lexo' },
     { text: 'Skills', link: '#skills' },
     { text: 'Show Case', link: '#showCase' },
     { text: 'Design', link: '#design' },

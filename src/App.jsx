@@ -91,7 +91,7 @@ function App() {
         isDarkMode={isDarkMode}
         profileImgs={data.profileImgs}
       />
-      {/* <MainShowCase /> */}
+      <MainShowCase />
       <SkillsAndTech techLogos={data.techLogos} />
       <AISection />
       <ShowCase showcase={data.showcase} isDarkMode={isDarkMode} />
