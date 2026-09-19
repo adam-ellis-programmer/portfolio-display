@@ -160,10 +160,10 @@ function ScopeDemo() {
           : ''
 
   return (
-    <div  className='overflow-hidden rounded-lg border border-slate-300 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-900'>
+    <div className='overflow-hidden rounded-lg border border-slate-300 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-900'>
       {/* Window bar, styled like the case header in the app */}
       <div className='flex flex-wrap items-baseline gap-x-3 gap-y-1 border-b border-slate-200 bg-slate-100 px-4 py-3 dark:border-slate-700 dark:bg-slate-800/60'>
-        <span className='font-serif text-base text-slate-900 dark:text-slate-100'>
+        <span className=' text-base text-slate-900 dark:text-slate-100'>
           Smith v Johnson
         </span>
         <span className='rounded-full bg-white px-2 py-0.5 text-xs text-slate-600 ring-1 ring-slate-300 dark:bg-slate-900 dark:text-slate-300 dark:ring-slate-700'>
@@ -256,8 +256,8 @@ function ScopeDemo() {
               </p>
             ) : sources.length === 0 ? (
               <p className='text-sm text-slate-600 dark:text-slate-300'>
-                Nothing in the ticked documents answers this. The assistant says so
-                rather than filling the gap from memory.
+                Nothing in the ticked documents answers this. The assistant says
+                so rather than filling the gap from memory.
               </p>
             ) : (
               <div className='space-y-3'>
@@ -301,8 +301,8 @@ function ScopeDemo() {
                   {ignored.length > 0 && (
                     <li className='pt-1 text-xs text-slate-400 dark:text-slate-500'>
                       {ignored.length} ticked document
-                      {ignored.length === 1 ? '' : 's'} held nothing close enough
-                      to the question to quote.
+                      {ignored.length === 1 ? '' : 's'} held nothing close
+                      enough to the question to quote.
                     </li>
                   )}
                 </ul>
@@ -340,13 +340,14 @@ function WhoSeesWhat() {
 
   return (
     <div className='rounded-lg border border-slate-200 p-5 dark:border-slate-700'>
-      <h3 className='font-serif text-lg text-slate-900 dark:text-slate-100'>
+      <h3 className=' text-lg text-slate-900 dark:text-slate-100'>
         A junior on one case cannot read another
       </h3>
       <p className='mt-2 max-w-prose text-sm leading-relaxed text-slate-600 dark:text-slate-300'>
-        Firms are required to keep matters apart. Access narrows three times before
-        any text reaches the model, and a person outside a case gets the same “not
-        found” page as a stranger, so the case’s existence stays private too.
+        Firms are required to keep matters apart. Access narrows three times
+        before any text reaches the model, and a person outside a case gets the
+        same “not found” page as a stranger, so the case’s existence stays
+        private too.
       </p>
 
       <dl className='mt-4 space-y-3'>
@@ -376,14 +377,20 @@ function Pipeline() {
   const steps = [
     ['Upload', 'PDF text is pulled out and cut into overlapping passages.'],
     ['Embed', 'Each passage becomes a 1,024-number vector from Voyage.'],
-    ['Retrieve', 'Postgres ranks passages by cosine distance, with a quota per document so a long statute can’t drown a two-page letter.'],
+    [
+      'Retrieve',
+      'Postgres ranks passages by cosine distance, with a quota per document so a long statute can’t drown a two-page letter.',
+    ],
     ['Answer', 'Claude reads the passages and writes with numbered citations.'],
-    ['Record', 'The question, the documents and the reader go into the audit log.'],
+    [
+      'Record',
+      'The question, the documents and the reader go into the audit log.',
+    ],
   ]
 
   return (
-    <div  className='rounded-lg border border-slate-200 p-5 dark:border-slate-700'>
-      <h3 className='font-serif text-lg text-slate-900 dark:text-slate-100'>
+    <div className='rounded-lg border border-slate-200 p-5 dark:border-slate-700'>
+      <h3 className=' text-lg text-slate-900 dark:text-slate-100'>
         What happens between the question and the answer
       </h3>
       <ol className='mt-4 space-y-3'>
@@ -418,7 +425,10 @@ function Built() {
   return (
     <ul className='grid gap-x-8 gap-y-3 sm:grid-cols-2'>
       {items.map(([name, role]) => (
-        <li key={name} className='border-t border-slate-200 pt-2 dark:border-slate-700'>
+        <li
+          key={name}
+          className='border-t border-slate-200 pt-2 dark:border-slate-700'
+        >
           <span className='block text-sm font-medium text-slate-900 dark:text-slate-100'>
             {name}
           </span>
@@ -440,23 +450,32 @@ export default function LexoShowcase({ repoUrl = '#', liveUrl = '#' }) {
     <section
       id='lexo'
       aria-labelledby='lexo-heading'
-      className='bg-white py-20 text-slate-900 dark:bg-slate-950 dark:text-slate-100'
+      className='bg-white py-20 text-slate-900 dark:bg-slate-950 dark:text-slate-100 p-6 md:p-3 relative'
     >
+      <div className='absolute  sm:-left5 -top-5  md:right-5 md:top-5 bg-rose-600 p-3 rounded-2xl'>
+        RAG App
+      </div>
+      
       <div className='mx-auto max-w-5xl'>
         {/* Opening */}
         <div className='max-w-2xl'>
-          <h2
-            id='lexo-heading'
-            className='font-serif text-3xl leading-tight sm:text-4xl'
-          >
-            Lexo reads a case file and shows its working
+          <h2 id='lexo-heading' className='text-3xl leading-tight sm:text-4xl'>
+            <span>
+              Custom generative AI platform built specifically for the legal
+              industry
+            </span>
+            {/* <span>Lexo reads a case file and shows its working</span> */}
           </h2>
+          <h3 className='mt-7 text-2xl '>
+            Upload books and legal cases to cross reference and get answers
+          </h3>
+
           <p className='mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300'>
             A research assistant for small law firms, in the mould of Harvey. A
             solicitor opens a case, chooses which client documents and which law
-            books the assistant may read, and asks a question in plain English. The
-            answer weaves the client’s facts together with the relevant law, and
-            every sentence carries a link back to the passage it came from.
+            books the assistant may read, and asks a question in plain English.
+            The answer weaves the client’s facts together with the relevant law,
+            and every sentence carries a link back to the passage it came from.
           </p>
         </div>
 
@@ -465,8 +484,8 @@ export default function LexoShowcase({ repoUrl = '#', liveUrl = '#' }) {
           <ScopeDemo />
           <p className='mt-3 text-sm text-slate-500 dark:text-slate-400'>
             Try it: untick the client’s letter and ask again. Scope is the whole
-            point, so an answer can only ever be as good as what it was allowed to
-            read.
+            point, so an answer can only ever be as good as what it was allowed
+            to read.
           </p>
         </div>
 
@@ -479,41 +498,42 @@ export default function LexoShowcase({ repoUrl = '#', liveUrl = '#' }) {
         {/* The rest of the product, briefly */}
         <div className='mt-14 grid gap-10 md:grid-cols-[1fr_1fr]'>
           <div>
-            <h3 className='font-serif text-lg'>Also in the build</h3>
+            <h3 className=' text-lg'>Also in the build</h3>
             <ul className='mt-4 space-y-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300'>
               <li>
                 <span className='font-medium text-slate-900 dark:text-slate-100'>
                   Clients and cases.
                 </span>{' '}
-                Onboard a client, open a matter, and add colleagues to the team with
-                admin and member roles.
+                Onboard a client, open a matter, and add colleagues to the team
+                with admin and member roles.
               </li>
               <li>
                 <span className='font-medium text-slate-900 dark:text-slate-100'>
                   A reader for long documents.
                 </span>{' '}
-                Paged text with search and jump-to-page, so a 500-page statute loads
-                one screen at a time.
+                Paged text with search and jump-to-page, so a 500-page statute
+                loads one screen at a time.
               </li>
               <li>
                 <span className='font-medium text-slate-900 dark:text-slate-100'>
                   An audit trail.
                 </span>{' '}
-                Every upload, view, question and change of access is recorded with a
-                name and a timestamp.
+                Every upload, view, question and change of access is recorded
+                with a name and a timestamp.
               </li>
               <li>
                 <span className='font-medium text-slate-900 dark:text-slate-100'>
                   No answer without a source.
                 </span>{' '}
-                Passages below a relevance threshold are dropped, and the assistant
-                says when the ticked documents don’t cover the question.
+                Passages below a relevance threshold are dropped, and the
+                assistant says when the ticked documents don’t cover the
+                question.
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className='font-serif text-lg'>Built with</h3>
+            <h3 className=' text-lg'>Built with</h3>
             <div className='mt-4'>
               <Built />
             </div>
