@@ -452,10 +452,9 @@ export default function LexoShowcase({ repoUrl = '#', liveUrl = '#' }) {
       aria-labelledby='lexo-heading'
       className='bg-white py-20 text-slate-900 dark:bg-slate-950 dark:text-slate-100 p-6 md:p-3 relative'
     >
-      <div className='absolute  sm:-left5 -top-5  md:right-5 md:top-5 bg-rose-600 p-3 rounded-2xl'>
+      <div className='absolute left-5 -top-5 md:left-auto md:right-5 md:top-5 bg-rose-600 p-3 rounded-2xl'>
         RAG App
       </div>
-      
       <div className='mx-auto max-w-5xl'>
         {/* Opening */}
         <div className='max-w-2xl'>
