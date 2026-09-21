@@ -1,7 +1,7 @@
 // App.js
 import { useFirebaseData } from './hooks/useFirebaseData'
 import NavBar from './components/NavBar'
-import Hero from './components/Hero'
+import HeroModern from './components/HeroModern'
 import SkillsAndTech from './components/SkillsAndTech'
 import ShowCase from './components/ShowCase'
 import DesignSection from './components/DesignSection'
@@ -82,11 +82,13 @@ function App() {
     return <div className='error'>Error: {error}</div>
   }
 
+
+
   return (
     <>
       {/* <PasswordSetup /> */}
       <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-      <Hero
+      <HeroModern
         showcase={data.showcase}
         isDarkMode={isDarkMode}
         profileImgs={data.profileImgs}
