@@ -239,7 +239,7 @@ const EcommerceSection = ({ isDarkMode }) => {
             Marketplaces to travel bookings
           </h2>
           <p className={`mt-5 text-lg leading-relaxed ${t.body}`}>
-            Three complete e-commerce sites on three different stacks: two
+            Multiple e-commerce sites on many different stacks of which include
             Amazon-style marketplaces and a travel booking site. Different
             products, different technologies, the same production-ready
             fundamentals.
