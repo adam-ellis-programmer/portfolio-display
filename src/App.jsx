@@ -17,6 +17,7 @@ import { logEvent } from 'firebase/analytics'
 import PasswordSetup from './password setup/PasswordSetup'
 import AISection from './components/AISection'
 import MainShowCase from './components/MainShowCase'
+import CRMSection from './components/CRMSection'
 
 function App() {
   const { data, loading, error } = useFirebaseData()
@@ -82,8 +83,6 @@ function App() {
     return <div className='error'>Error: {error}</div>
   }
 
-
-
   return (
     <>
       {/* <PasswordSetup /> */}
@@ -94,6 +93,10 @@ function App() {
         profileImgs={data.profileImgs}
       />
       <MainShowCase />
+      <CRMSection
+        isDarkMode={isDarkMode}
+        liveUrl='https://your-crm-demo.web.app'
+      />
       <SkillsAndTech techLogos={data.techLogos} />
       <AISection />
       <ShowCase showcase={data.showcase} isDarkMode={isDarkMode} />
