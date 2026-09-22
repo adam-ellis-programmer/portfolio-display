@@ -240,7 +240,7 @@ const EcommerceSection = ({ isDarkMode }) => {
           </h2>
           <p className={`mt-5 text-lg leading-relaxed ${t.body}`}>
             Multiple e-commerce sites on many different stacks of which include
-            Amazon-style marketplaces and a travel booking site. Different
+            Amazon-style marketplaces and travel booking sites. Different
             products, different technologies, the same production-ready
             fundamentals.
           </p>
