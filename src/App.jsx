@@ -18,6 +18,7 @@ import PasswordSetup from './password setup/PasswordSetup'
 import AISection from './components/AISection'
 import MainShowCase from './components/MainShowCase'
 import CRMSection from './components/CRMSection'
+import EcommerceSection from './components/EcommerceSection'
 
 function App() {
   const { data, loading, error } = useFirebaseData()
@@ -97,6 +98,7 @@ function App() {
         isDarkMode={isDarkMode}
         liveUrl='https://your-crm-demo.web.app'
       />
+      <EcommerceSection isDarkMode={isDarkMode} />
       <SkillsAndTech techLogos={data.techLogos} />
       <AISection />
       <ShowCase showcase={data.showcase} isDarkMode={isDarkMode} />
