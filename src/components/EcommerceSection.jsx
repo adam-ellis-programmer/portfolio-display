@@ -266,7 +266,7 @@ const EcommerceSection = ({ isDarkMode }) => {
       aria-labelledby='ecommerce-title'
       className='relative border-t border-gray-300'
     >
-      <div className='mx-auto max-w-6xl px-6 py-20 sm:px-10 md:py-10'>
+      <div className='mx-auto max-w-6xl px-6 py-10 sm:px-10 md:py-10'>
         {/* ---------- Intro ---------- */}
         <div className='max-w-3xl '>
           {/* <p
@@ -276,14 +276,14 @@ const EcommerceSection = ({ isDarkMode }) => {
             E-commerce
           </p> */}
 
-          <h2 className='text-4xl  sm:text-5xl font-bold'>
+          <h2 className='sm:text-5xl text-4xl leading-11   font-bold'>
             E Commerce Platforms
           </h2>
           <h3
             id='ecommerce-title'
             className={`mt-4 text-3xl leading-tight font-bold tracking-tight sm:text-3xl ${t.heading}`}
           >
-            Marketplaces to travel bookings
+            Marketplaces to travel booking apps
           </h3>
           <p className={`mt-5 text-lg leading-relaxed ${t.body}`}>
             Multiple e-commerce sites on many different stacks of which include
