@@ -12,7 +12,11 @@ const PROJECTS = [
     tagline: 'An Amazon-style marketplace on a Python REST API',
     description:
       'A multi-category online shop in the style of Amazon. A Python backend handles products, users, orders and payments behind a REST API, and a React single-page app delivers a fast, app-like shopping experience.',
-    highlights: ['Multi-category catalogue', 'Cart & checkout', 'Order tracking'],
+    highlights: [
+      'Multi-category catalogue',
+      'Cart & checkout',
+      'Order tracking',
+    ],
     flow: ['React', 'REST API', 'Python', 'Database'],
     stack: ['Python', 'React', 'REST API', 'JWT auth'],
     icon: 'fa-brands fa-python',
@@ -28,7 +32,11 @@ const PROJECTS = [
     tagline: 'An Amazon-style marketplace in JavaScript end to end',
     description:
       'A second large-catalogue store, built with MongoDB, Express, React and Node. One language across the whole stack, with a flexible document database suited to varied product data.',
-    highlights: ['Product search & filters', 'Cart & checkout', 'Admin product management'],
+    highlights: [
+      'Product search & filters',
+      'Cart & checkout',
+      'Admin product management',
+    ],
     flow: ['React', 'Express', 'Node', 'MongoDB'],
     stack: ['MongoDB', 'Express', 'React', 'Node.js', 'Mongoose'],
     icon: 'fa-brands fa-node-js',
@@ -44,7 +52,11 @@ const PROJECTS = [
     tagline: 'A travel booking site with server-rendered pages',
     description:
       'A travel site where customers browse destinations and trips, then book and pay online. Server-rendered pages load fast and are fully indexable, which matters when travellers find you through search.',
-    highlights: ['Destination browsing', 'Online booking & payment', 'SEO-friendly pages'],
+    highlights: [
+      'Destination browsing',
+      'Online booking & payment',
+      'SEO-friendly pages',
+    ],
     flow: ['Pages', 'Server rendering', 'API routes', 'Database'],
     stack: ['Next.js', 'React', 'Server components', 'API routes'],
     icon: 'fa-solid fa-n',
@@ -144,7 +156,9 @@ const ProjectCard = ({ project, t }) => {
         >
           <i className={icon} aria-hidden='true'></i>
         </div>
-        <h3 className={`text-2xl font-bold tracking-tight ${t.heading}`}>{name}</h3>
+        <h3 className={`text-2xl font-bold tracking-tight ${t.heading}`}>
+          {name}
+        </h3>
       </div>
 
       <p className={`relative mt-4 font-medium ${t.heading}`}>{tagline}</p>
@@ -152,8 +166,14 @@ const ProjectCard = ({ project, t }) => {
 
       <ul className='relative mt-5 space-y-2'>
         {highlights.map((item) => (
-          <li key={item} className={`flex items-center gap-2 text-sm font-medium ${t.heading}`}>
-            <i className={`fa-solid fa-circle-check ${t.check}`} aria-hidden='true'></i>
+          <li
+            key={item}
+            className={`flex items-center gap-2 text-sm font-medium ${t.heading}`}
+          >
+            <i
+              className={`fa-solid fa-circle-check ${t.check}`}
+              aria-hidden='true'
+            ></i>
             {item}
           </li>
         ))}
@@ -161,17 +181,27 @@ const ProjectCard = ({ project, t }) => {
 
       {/* architecture flow */}
       <div className='relative mt-6'>
-        <p className={`text-xs font-semibold tracking-widest uppercase ${t.muted}`}>
+        <p
+          className={`text-xs font-semibold tracking-widest uppercase ${t.muted}`}
+        >
           Architecture
         </p>
-        <ol className='mt-3 flex flex-wrap items-center gap-1.5' aria-label={`${name} architecture`}>
+        <ol
+          className='mt-3 flex flex-wrap items-center gap-1.5'
+          aria-label={`${name} architecture`}
+        >
           {flow.map((step, i) => (
             <li key={step} className='flex items-center gap-1.5'>
-              <span className={`rounded-lg border px-2.5 py-1 text-xs font-medium ${t.flowStep}`}>
+              <span
+                className={`rounded-lg border px-2.5 py-1 text-xs font-medium ${t.flowStep}`}
+              >
                 {step}
               </span>
               {i < flow.length - 1 && (
-                <i className={`fa-solid fa-arrow-right text-[10px] ${t.arrow}`} aria-hidden='true'></i>
+                <i
+                  className={`fa-solid fa-arrow-right text-[10px] ${t.arrow}`}
+                  aria-hidden='true'
+                ></i>
               )}
             </li>
           ))}
@@ -179,9 +209,15 @@ const ProjectCard = ({ project, t }) => {
       </div>
 
       {/* stack chips */}
-      <ul className='relative mt-5 flex flex-wrap gap-1.5' aria-label={`${name} tech stack`}>
+      <ul
+        className='relative mt-5 flex flex-wrap gap-1.5'
+        aria-label={`${name} tech stack`}
+      >
         {stack.map((tech) => (
-          <li key={tech} className={`rounded-full border px-3 py-1 text-xs ${t.chip}`}>
+          <li
+            key={tech}
+            className={`rounded-full border px-3 py-1 text-xs ${t.chip}`}
+          >
             {tech}
           </li>
         ))}
@@ -197,7 +233,10 @@ const ProjectCard = ({ project, t }) => {
               rel='noopener noreferrer'
               className='inline-flex items-center gap-2 rounded-full bg-[#6D84B0] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#5a7099]'
             >
-              <i className='fa-solid fa-arrow-up-right-from-square' aria-hidden='true'></i>
+              <i
+                className='fa-solid fa-arrow-up-right-from-square'
+                aria-hidden='true'
+              ></i>
               Visit store
             </a>
           )}
@@ -222,22 +261,30 @@ const EcommerceSection = ({ isDarkMode }) => {
   const t = getTheme(isDarkMode)
 
   return (
-    <section id='ecommerce' aria-labelledby='ecommerce-title' className='relative'>
+    <section
+      id='ecommerce'
+      aria-labelledby='ecommerce-title'
+      className='relative border-t border-gray-300'
+    >
       <div className='mx-auto max-w-6xl px-6 py-20 sm:px-10 md:py-10'>
         {/* ---------- Intro ---------- */}
-        <div className='max-w-3xl'>
-          <p
+        <div className='max-w-3xl '>
+          {/* <p
             className={`inline-flex items-center gap-2 rounded-full border px-3 py-1 text-sm font-medium ${t.eyebrow}`}
           >
             <i className='fa-solid fa-bag-shopping text-xs' aria-hidden='true'></i>
             E-commerce
-          </p>
-          <h2
+          </p> */}
+
+          <h2 className='text-4xl  sm:text-5xl font-bold'>
+            E Commerce Platforms
+          </h2>
+          <h3
             id='ecommerce-title'
-            className={`mt-6 text-4xl leading-tight font-bold tracking-tight sm:text-5xl ${t.heading}`}
+            className={`mt-4 text-3xl leading-tight font-bold tracking-tight sm:text-3xl ${t.heading}`}
           >
             Marketplaces to travel bookings
-          </h2>
+          </h3>
           <p className={`mt-5 text-lg leading-relaxed ${t.body}`}>
             Multiple e-commerce sites on many different stacks of which include
             Amazon-style marketplaces and travel booking sites. Different
@@ -247,14 +294,24 @@ const EcommerceSection = ({ isDarkMode }) => {
         </div>
 
         {/* ---------- Shared features ---------- */}
-        <div className={`mt-12 rounded-3xl border p-6 sm:p-8 ${t.featureStrip}`}>
-          <p className={`text-xs font-semibold tracking-widest uppercase ${t.muted}`}>
+        <div
+          className={`mt-12 rounded-3xl border p-6 sm:p-8 ${t.featureStrip}`}
+        >
+          <p
+            className={`text-xs font-semibold tracking-widest uppercase ${t.muted}`}
+          >
             Core features across all three
           </p>
           <ul className='mt-5 grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-4'>
             {SHARED_FEATURES.map(({ icon, label }) => (
-              <li key={label} className={`flex items-center gap-2.5 text-sm font-medium ${t.heading}`}>
-                <i className={`fa-solid ${icon} w-4 text-center ${t.featureIcon}`} aria-hidden='true'></i>
+              <li
+                key={label}
+                className={`flex items-center gap-2.5 text-sm font-medium ${t.heading}`}
+              >
+                <i
+                  className={`fa-solid ${icon} w-4 text-center ${t.featureIcon}`}
+                  aria-hidden='true'
+                ></i>
                 {label}
               </li>
             ))}
